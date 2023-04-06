@@ -15,7 +15,6 @@ export default function MyComponent() {
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
   const [isVisible4, setIsVisible4] = useState(false);
-  console.log(isVisible1,isVisible2,isVisible3,isVisible4)
 
   useEffect(() => {
     const observer1 = new IntersectionObserver(([entry]) => {
@@ -205,7 +204,7 @@ useEffect(()=>{
       <div className={`bg-[#3A881B] h-40 -mt-20`}></div>
 
       <div ref={div4Ref} className={`pt-10 md:px-16 lg:px-40 ge_container`}>
-        <p className={`${isVisible4&&'slide-in-text-reverse'} text-2xl font-bold text-[#4abe1c] px-6`}>Tem alguma dúvida? Entre em contato conosco e teremos prazer em ajudá-lo.</p>
+        <p className={`${isVisible4&&'slide-in-text-reverse'} text-2xl font-bold text-[#3A881B] px-6`}>Tem alguma dúvida? Entre em contato conosco e teremos prazer em ajudá-lo.</p>
       </div>   
 
       <div className="px-6 md:px-16 lg:px-40">

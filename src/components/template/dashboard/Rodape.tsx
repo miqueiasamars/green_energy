@@ -13,29 +13,29 @@ export function Rodape (){
       <div className='flex justify-center'>
         <div>
         <div className="flex gap-4">   
-          <div onClick={() => router.push("#")} className='bg-[#fff] px-3 rounded-lg grid items-center hover:bg-[#6708ff] hover:-translate-y-1 hover:scale-105 duration-300 py-2'>
+          <div onClick={() => router.push("#")} className='bg-[#fff] px-2 rounded-lg grid items-center hover:bg-[#0c08ff] hover:-translate-y-1 hover:scale-105 duration-300 py-1'>
           <Image
             width={25}
             height={25}
-            src={'/face.png'}
+            src={'/face.svg'}
             alt="Avatar do Usuário"
             className={`cursor-pointer`}/>
           </div>
 
-          <div onClick={() => router.push(`https://api.whatsapp.com/send?phone=55&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20o%20atendimento%20da%20LL CONSTRUTORA`)} className='bg-[#fff] px-3 rounded-lg grid items-center hover:bg-[#00A859] hover:-translate-y-1 hover:scale-105 duration-300 py-2'>
+          <div onClick={() => router.push(`https://api.whatsapp.com/send?phone=55&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20o%20atendimento%20da%20GREEN ENERGY`)} className='bg-[#fff] px-2 rounded-lg grid items-center hover:bg-[#00A859] hover:-translate-y-1 hover:scale-105 duration-300 py-1'>
           <Image
             width={25}
             height={25}
-            src={'/whatsapp.png'}
+            src={'/whatsapp.svg'}
             alt="Avatar do Usuário"
             className={`cursor-pointer`}/>
           </div>
 
-          <div onClick={() => router.push("#")} className='bg-[#fff] px-3 rounded-lg grid items-center hover:bg-[#ff2050] hover:-translate-y-1 hover:scale-105 duration-300 py-2'>
+          <div onClick={() => router.push("#")} className='bg-[#fff] px-2 rounded-lg grid items-center hover:bg-[#ff2050] hover:-translate-y-1 hover:scale-105 duration-300 py-1'>
           <Image
             width={25}
             height={25}
-            src={'/instagram.png'}
+            src={'/instagram.svg'}
             alt="Avatar do Usuário"
             className={`cursor-pointer`}/>
           </div>

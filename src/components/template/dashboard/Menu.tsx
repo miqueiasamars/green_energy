@@ -98,7 +98,7 @@ return (
         <div className='flex basis-1/2'> 
             {/*  Produtos de produtores  */}
             {
-            <div onClick={menu1} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#49db0f]':'text-[#fff]'} hover:text-[#49db0f]`}>
+            <div onClick={menu1} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
             <div className={` transition ease-in-out delay-150 hover:translate-z-4 hover:scale-125 duration-200`}>
                 <p>Home</p>
             </div>
@@ -106,7 +106,7 @@ return (
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu2} className={`px-5 py-3 cursor-pointer ${statusmenu  === '2'?'text-[#49db0f]':'text-[#fff]'} hover:text-[#49db0f]`}>
+            <div onClick={menu2} className={`px-5 py-3 cursor-pointer ${statusmenu  === '2'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
             <div className={` transition ease-in-out delay-150 hover:translate-z-4 hover:scale-125 duration-200`}>
                 <p>Sobre</p>
             </div>
@@ -114,7 +114,7 @@ return (
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu3} className={`px-5 py-3 cursor-pointer ${statusmenu  === '3'?'text-[#49db0f]':'text-[#fff]'} hover:text-[#49db0f]`}>
+            <div onClick={menu3} className={`px-5 py-3 cursor-pointer ${statusmenu  === '3'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
             <div className={` transition ease-in-out delay-150 hover:translate-z-4 hover:scale-125 duration-200`}>
                 <p>Produtos</p>
             </div>
@@ -122,7 +122,7 @@ return (
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu4} className={`px-5 py-3 cursor-pointer ${statusmenu  === '4'?'text-[#49db0f]':'text-[#fff]'} hover:text-[#49db0f]`}>
+            <div onClick={menu4} className={`px-5 py-3 cursor-pointer ${statusmenu  === '4'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
             <div className={` transition ease-in-out delay-150  hover:translate-z-4 hover:scale-125 duration-200`}>
                 <p>Loja</p>
             </div>
@@ -130,7 +130,7 @@ return (
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu5} className={`px-5 py-3 cursor-pointer ${statusmenu  === '5'?'text-[#49db0f]':'text-[#fff]'} hover:text-[#49db0f]`}>
+            <div onClick={menu5} className={`px-5 py-3 cursor-pointer ${statusmenu  === '5'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
             <div className={` transition ease-in-out delay-150  hover:translate-z-4 hover:scale-125 duration-200`}>
                 <p>Contato</p>
             </div>
@@ -138,7 +138,7 @@ return (
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu6} className={`border rounded-md border-[] px-4 py-3 cursor-pointer ${statusmenu  === '6'?'border-[#49db0f] text-[#49db0f]':'text-[#fff]'} hover:border-[#49db0f] hover:text-[#49db0f]`}>
+            <div onClick={menu6} className={`border rounded-md border-[] px-4 py-3 cursor-pointer ${statusmenu  === '6'?'border-[#67ff2b] text-[#67ff2b]':'text-[#fff]'} hover:border-[#67ff2b] hover:text-[#67ff2b]`}>
             <div className={`transition ease-in-out delay-150 hover:translate-z-4 duration-200`}>
                 <p>Orçamento</p>
             </div>

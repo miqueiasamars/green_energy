@@ -25,6 +25,12 @@ a {
   }
 }
 
+.slide-in-text-menu {
+  position: relative;
+  left: -100%;
+  animation: slide-in 0.5s forwards;
+}
+
 .slide-in-text {
   position: relative;
   left: -100%;
@@ -46,7 +52,7 @@ a {
 
 @keyframes slide-in {
   from {
-    left: -100%;
+    left: -50%;
   }
   to {
     left: 0;
@@ -55,7 +61,7 @@ a {
 
 @keyframes slide-in-reverse {
   from {
-    left: 100%;
+    left: 50%;
   }
   to {
     left: 0;
