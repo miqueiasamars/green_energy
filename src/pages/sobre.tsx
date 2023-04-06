@@ -40,7 +40,7 @@ useEffect(()=>{
     <div className={`bg-[#ffffff] text-[#494949]`}>
     <Layout>
    
-      <div className="flex justify-center items-center bg-center shadow-md shadow-[#4abe1c]/40" style={{ backgroundImage: 'url(/greenenergy_pellets4.gif)', height:300 }}>
+      <div className="flex justify-center items-center bg-center shadow-md shadow-[#4abe1c]/40" style={{ backgroundImage: 'url(/greenenergy_pellets.png)', height:300 }}>
              <div className="text-white text-6xl font-bold pt-4">SOBRE</div>
       </div>      
 

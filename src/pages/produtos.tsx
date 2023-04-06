@@ -32,7 +32,7 @@ useEffect(()=>{
   dispatch({
     type: 'MENU',
     payload: {
-        menu: '2',        
+        menu: '3',        
         }
     });
 },[dispatch])
@@ -41,7 +41,7 @@ useEffect(()=>{
     <div className={`bg-[#ffffff] text-black`}>
     <Layout>
    
-      <div className="flex justify-center items-center bg-center shadow-md shadow-[#3A881B]/40" style={{ backgroundImage: 'url(/greenenergy_pellets4.gif)', height:300 }}>
+      <div className="flex justify-center items-center bg-center shadow-md shadow-[#3A881B]/40" style={{ backgroundImage: 'url(/greenenergy_pellets.png)', height:300 }}>
              <div className="text-white text-6xl font-bold pt-4">PRODUTOS</div>
       </div>
 

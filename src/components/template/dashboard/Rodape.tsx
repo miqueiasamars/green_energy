@@ -17,7 +17,7 @@ export function Rodape (){
           <Image
             width={25}
             height={25}
-            src={'/icon_face.svg'}
+            src={'/face.png'}
             alt="Avatar do Usuário"
             className={`cursor-pointer`}/>
           </div>
@@ -26,7 +26,7 @@ export function Rodape (){
           <Image
             width={25}
             height={25}
-            src={'/icon_whatsapp.svg'}
+            src={'/whatsapp.png'}
             alt="Avatar do Usuário"
             className={`cursor-pointer`}/>
           </div>
@@ -35,7 +35,7 @@ export function Rodape (){
           <Image
             width={25}
             height={25}
-            src={'/icon_instagram.svg'}
+            src={'/instagram.png'}
             alt="Avatar do Usuário"
             className={`cursor-pointer`}/>
           </div>

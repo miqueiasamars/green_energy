@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import { useContext, useEffect, useRef, useState } from "react";
 import Layout from "../components/template/dashboard/Layout";
 import { Context } from "../data/contexts/Context";
-import ModalDelete from "../components/ModalDelete";
 
 export default function MyComponent() {
 
@@ -83,59 +82,28 @@ useEffect(()=>{
   dispatch({
     type: 'MENU',
     payload: {
-        dados: '1',        
+        menu: '1',        
         }
     });
 },[dispatch])
 
-console.log(state.produtos.banir)
-const tt = () => {
-  dispatch({
-    type: 'PRODUTOS',
-    payload: {
-      banir: '1',
-    } 
-    });
-}
- 
   return (
     <>
     <Layout>    
     
     <div className="bg-[#ffffff] text-[#494949]">
 
-    {/* <div className=" bg-center" style={{ backgroundImage: 'url(/greenenergy_pellets4.gif)', height:660 }}>
-      <div className="grid md:grid-cols-2"> 
-      <div className="flex flex-col justify-center pt-52 sm:pt-60 md:pt-64 ge_container">
-      <div className={`font-bold text-2xl md:text-3xl lg:text-4xl px-6 sm:px-8 md:px-10 lg:px-20 ge_container`} ref={div1Ref}>
-       <p className={`${isVisible1&&'slide-in-text'} text-white`}>Oferecemos <a className="text-[#67ff2b]">Pellets</a> de qualidade e produzidos de forma responsável.</p>
-       <p className={`${isVisible1&&'slide-in-text'} text-white pt-2`}>Cuidamos do meio ambiente.</p>
-       <p className={`${isVisible1&&'slide-in-text-reverse'} text-white text-xl font-semibold pt-2`}>Pellets de qualidade para aquecer com sustentabilidade. Conte conosco!</p>
-       <div className="flex justify-center sm:justify-start pt-10"><button onClick={tt} className={`${isVisible1&&'slide-in-text'} bg-white/25 hover:bg-white/60 shadow-lg backdrop-blur-sm text-[#67ff2b] hover:text-[#245510] border border-white rounded-lg px-4 sm:px-10 py-2 text-2xl font-semibold`}>Fale com um especialista</button></div>
-       </div> 
-       </div>
-       </div>     
-    </div> */}
-
-{/* Oferecemos Pellets de qualidade e produzidos de forma responsável.
-
-Cuidamos do meio ambiente.
-
-Pellets de qualidade para aquecer com sustentabilidade. Conte conosco! */}
-
-
     <div className="ge_container_01">
       <div className="bg-center background-image"></div>
-      <div className="text text-center">
+      <div className="text sm:text-center pt-10 sm:pt-16 md:pt-20 sm:px-10">
       <div className={`font-bold text-2xl md:text-3xl lg:text-4xl px-6 sm:px-8 md:px-10 lg:px-20`} ref={div1Ref}>
        <p className={`${isVisible1&&'slide-in-text'} text-white`}>Oferecemos <a className="text-[#67ff2b]">Pellets</a> de qualidade e produzidos de forma responsável.</p>
        <p className={`${isVisible1&&'slide-in-text'} text-white pt-2`}>Cuidamos do meio ambiente.</p>
-       <p className={`${isVisible1&&'slide-in-text-reverse'} text-white text-xl font-semibold pt-2`}>Pellets de qualidade para aquecer com sustentabilidade. Conte conosco!</p>
-       <div className="flex justify-center pt-10"><button onClick={tt} className={`${isVisible1&&'slide-in-text'} bg-white/25 hover:bg-white/60 shadow-lg backdrop-blur-sm text-[#67ff2b] hover:text-[#245510] border border-white rounded-lg px-4 sm:px-10 py-2 text-2xl font-semibold`}>Fale com um especialista</button></div>
+       <p className={`${isVisible1&&'slide-in-text-reverse'} text-white text-base md:text-xl font-semibold pt-2`}>Pellets de qualidade para aquecer com sustentabilidade. Conte conosco!</p>
+       <div className="flex justify-center pt-10"><button className={`${isVisible1&&'slide-in-text'} bg-white/25 hover:bg-white/60 shadow-lg backdrop-blur-sm text-[#67ff2b] hover:text-[#245510] border border-white rounded-lg px-4 sm:px-10 py-2 text-2xl font-semibold`}>Fale com um especialista</button></div>
        </div> 
       </div>
     </div>
-
 
     <div className="grid md:grid-cols-2 gap-4 pt-16 text-xl font-semibold px-4 sm:px-8 md:px-10 lg:px-20 ge_container">  
     <div ref={div2Ref} className="flex items-center">

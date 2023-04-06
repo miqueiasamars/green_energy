@@ -148,7 +148,7 @@ return (
              {/*  Produtos de produtores  */}
              {
             <div onClick={menu4} className={`px-5 py-3 cursor-pointer ${statusmenu  === '4'?'text-[#49db0f]':'text-[#fff]'} hover:text-[#49db0f]`}>
-            <div className={` transition ease-in-out delay-150  hover:translate-z-4 hover:scale-125 duration-200`}>
+            <div className={` `}>
                 <p>Loja</p>
             </div>
             </div>
@@ -156,7 +156,7 @@ return (
              {/*  Produtos de produtores  */}
              {
             <div onClick={menu5} className={`px-5 py-3 cursor-pointer ${statusmenu  === '5'?'text-[#49db0f]':'text-[#fff]'} hover:text-[#49db0f]`}>
-            <div className={` transition ease-in-out delay-150  hover:translate-z-4 hover:scale-125 duration-200`}>
+            <div className={``}>
                 <p>Contato</p>
             </div>
             </div>

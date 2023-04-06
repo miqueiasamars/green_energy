@@ -16,8 +16,7 @@ export const dadosReducer = (state: dadosType, action: reducerActionType) => {
     switch(action.type){        
         // Metodo de pagamento
         case 'MENU':   
-        return {...state, 
-            menu: action.payload.menu,
+        return {...state, menu: action.payload.menu,
         };           
     }
 
