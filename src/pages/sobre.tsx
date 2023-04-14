@@ -20,7 +20,6 @@ const [isVisible1, setIsVisible1] = useState(false);
 const [isVisible2, setIsVisible2] = useState(false);
 const [isVisible3, setIsVisible3] = useState(false);
 const [isVisible4, setIsVisible4] = useState(false);
-console.log(isVisible1,isVisible2,isVisible3,isVisible4)
 
 useEffect(() => {
   const observer1 = new IntersectionObserver(([entry]) => {

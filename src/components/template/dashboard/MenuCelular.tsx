@@ -85,22 +85,56 @@ const menu6 = () =>{
        });
 }
 
+const brasil = () =>{
+    return(
+        <div>
+        <img                
+          src={"/greenenergy_brasil.png"}         
+          alt="Produtos-copps"
+          className={`cursor-pointer w-6`}
+        />
+        </div>
+    )
+}
+
+const usa = () =>{
+    return(
+        <div>
+        <img                
+          src={"/greenenergy_usa.png"}         
+          alt="Produtos-copps"
+          className={`cursor-pointer w-6`}
+        />
+        </div>
+    )
+}
+
 
 return (
 <> 
 {tela <= 900&&
-    <aside className={`bg-[#373837]/50 backdrop-blur-sm minha-div shadow-lg fixed bottom-0 top-0 w-full px-5 ${status?'h-ful':'h-16'}`}> 
-
-          {!status&&<div className='flex justify-end'>
+    
+    <aside className={`bg-[#fff]/50 backdrop-blur-sm minha-div shadow-lg fixed bottom-0 top-0 w-full ${status?'h-ful':'h-20'}`}> 
+                   
+          {!status&&
+          <div>
+          <div className='h-8 bg-[#e5e4e4]/50 flex justify-end px-8 items-center gap-3'>Você está no {brasil()} ou {usa()}</div>
+          <div className='flex justify-between pt-2 px-5'>
+          <div className='font-bold text-xl text-[#5A4B3C]'>logomarca</div>
+          <div className=''>
             <button
-            className='text-white mt-4' onClick={()=>setStatus(true)}> 
+            className='text-[#3A881B]' onClick={()=>setStatus(true)}> 
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
             </button>            
-          </div> }   
+          </div>
+          </div>
+          </div>
+           }   
 
     {status&&
+
     <div className=''>  
     <div className="fixed inset-0">            
       
@@ -108,7 +142,7 @@ return (
 
     <div className='bg-[#fff]/60 h-screen slide-in-text-menu w-5/6 backdrop-blur-sm border-r-2'>
 
-    <div onClick={()=>setStatus(false)} className="flex justify-end px-4 py-4"><a className='border border-[#fff] rounded-md px-2 font-semibold text-2xl text-white'>X</a></div>   
+    <div onClick={()=>setStatus(false)} className="flex justify-end px-4 py-4"><a className='border border-[#3A881B] rounded-md px-2 font-semibold text-2xl text-[#3A881B]'>X</a></div>   
         
         <div className='flex flex-col items-center justify-center pt-8'>
         {/* <img
@@ -117,13 +151,13 @@ return (
          src={'/logo_llconstrutora.png'}
          alt="Avatar do Usuário"
          className={``}/> */}
-         <div className='text-4xl font-bold text-[#67ff2b]'>LOGO MARCA</div>
+         <div className='text-4xl font-bold text-[#3A881B]'>LOGO MARCA</div>
         </div>
 
         <div className='pt-10 text-xl font-semibold px-4'> 
             {/*  Produtos de produtores  */}
             {
-            <div onClick={menu1} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
+            <div onClick={menu1} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#3A881B]':'text-[#3A881B]'} hover:text-[#9d9d9d]`}>
             <div className={``}>
                 <p>Home</p>
             </div>
@@ -131,45 +165,45 @@ return (
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu2} className={`px-5 py-3 cursor-pointer ${statusmenu  === '2'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
-            <div className={``}>
-                <p>Sobre</p>
-            </div>
-            </div>
+            // <div onClick={menu2} className={`px-5 py-3 cursor-pointer ${statusmenu  === '2'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
+            // <div className={``}>
+            //     <p>Sobre</p>
+            // </div>
+            // </div>
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu3} className={`px-5 py-3 cursor-pointer ${statusmenu  === '3'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
-            <div className={``}>
-                <p>Produtos</p>
-            </div>
-            </div>
+            // <div onClick={menu3} className={`px-5 py-3 cursor-pointer ${statusmenu  === '3'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
+            // <div className={``}>
+            //     <p>Produtos</p>
+            // </div>
+            // </div>
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu4} className={`px-5 py-3 cursor-pointer ${statusmenu  === '4'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
-            <div className={` `}>
-                <p>Loja</p>
-            </div>
-            </div>
+            // <div onClick={menu4} className={`px-5 py-3 cursor-pointer ${statusmenu  === '4'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
+            // <div className={` `}>
+            //     <p>Loja</p>
+            // </div>
+            // </div>
             } 
              {/*  Produtos de produtores  */}
              {
-            <div onClick={menu5} className={`px-5 py-3 cursor-pointer ${statusmenu  === '5'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
-            <div className={``}>
-                <p>Contato</p>
-            </div>
-            </div>
+            // <div onClick={menu5} className={`px-5 py-3 cursor-pointer ${statusmenu  === '5'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
+            // <div className={``}>
+            //     <p>Contato</p>
+            // </div>
+            // </div>
             } 
              {/*  Produtos de produtores  */}
              {
-            <div className='px-4 pt-4'>
-            <div onClick={menu6} className={`border rounded-md border-[] px-4 py-3 cursor-pointer ${statusmenu  === '6'?'border-[#67ff2b] text-[#67ff2b]':'text-[#fff]'} hover:border-[#67ff2b] hover:text-[#67ff2b]`}>
-            <div className={`text-center`}>
-                <p>Orçamento</p>
-            </div>
-            </div>
-            </div>
+            // <div className='px-4 pt-4'>
+            // <div onClick={menu6} className={`border rounded-md border-[] px-4 py-3 cursor-pointer ${statusmenu  === '6'?'border-[#67ff2b] text-[#67ff2b]':'text-[#fff]'} hover:border-[#67ff2b] hover:text-[#67ff2b]`}>
+            // <div className={`text-center`}>
+            //     <p>Orçamento</p>
+            // </div>
+            // </div>
+            // </div>
             }                 
                   
         </div>        

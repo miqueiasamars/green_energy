@@ -119,7 +119,7 @@ useEffect(()=>{
              <div className="text-white text-6xl font-bold pt-4">PRODUTOS</div>
       </div>
 
-      <div className="text-xl md:text-2xl font-bold text-[#727272]">
+      <div className="text-xl md:text-2xl font-semibold text-[#727272]">
 
         <div className="grid md:grid-cols-2 pt-10 md:pt-20">
           <p ref={div1Ref} className={`${isVisible1&&'slide-in-text'} flex justify-center items-center px-6 md:px-20`}>A demanda por fontes de energia renovável tem aumentado nos últimos anos, e os pellets são uma opção cada vez mais popular nesse sentido. Eles são produzidos a partir de resíduos de madeira refinada e seca e podem ser usados em diversas aplicações, desde aquecimento de estufas e piscinas até fornos de padarias e cerâmicas.</p>

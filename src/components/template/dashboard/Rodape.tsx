@@ -1,78 +1,99 @@
 import Image from 'next/image';
 import router from 'next/router';
-import { IconEmail, IconMaps, IconRelogio, Icontelephone } from '../../icons';
+import { IconEmail, IconMaps, IconRelogio, IconWhatsApp, Icontelephone } from '../../icons';
 
 export function Rodape (){
 
     return(
 
-      <div className='bg-[#1b440b] py-4 px-4'>
+      <>
 
-      <div className='py-10 grid grid-cols-1 md:grid-cols-3 gap-4'>
-      
-      <div className='flex justify-center'>
+      <div className='bg-[#3A881B] pt-10 pb-10 py-4 px-2'>
+
+
+      <div className=''>    
+
+      <div className='px-2'>
         <div>
-        <div className="flex gap-4">   
-          <div onClick={() => router.push("#")} className='bg-[#fff] px-2 rounded-lg grid items-center hover:bg-[#0c08ff] hover:-translate-y-1 hover:scale-105 duration-300 py-1'>
-          <Image
-            width={25}
-            height={25}
-            src={'/face.svg'}
-            alt="Avatar do Usuário"
-            className={`cursor-pointer`}/>
-          </div>
-
-          <div onClick={() => router.push(`https://api.whatsapp.com/send?phone=55&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20o%20atendimento%20da%20GREEN ENERGY`)} className='bg-[#fff] px-2 rounded-lg grid items-center hover:bg-[#00A859] hover:-translate-y-1 hover:scale-105 duration-300 py-1'>
-          <Image
-            width={25}
-            height={25}
-            src={'/whatsapp.svg'}
-            alt="Avatar do Usuário"
-            className={`cursor-pointer`}/>
-          </div>
-
-          <div onClick={() => router.push("#")} className='bg-[#fff] px-2 rounded-lg grid items-center hover:bg-[#ff2050] hover:-translate-y-1 hover:scale-105 duration-300 py-1'>
-          <Image
-            width={25}
-            height={25}
-            src={'/instagram.svg'}
-            alt="Avatar do Usuário"
-            className={`cursor-pointer`}/>
-          </div>
-          </div>
-          
-          <div className='mt-10'>
-          <div className='text-white font-semibold mt-3 cursor-pointer' onClick={() => router.push("/")}>Página Inicial</div>
-          <div className='text-white font-semibold mt-3 cursor-pointer' onClick={() => router.push("/sobre")}>Sobre</div>
-          <div className='text-white font-semibold mt-3 cursor-pointer' onClick={() => router.push("/produtos")}>Produtos</div>
-          <div className='text-white font-semibold mt-3 cursor-pointer' onClick={() => router.push("/loja")}>Loja</div>
-          <div className='text-white font-semibold mt-3 cursor-pointer' onClick={() => router.push("/contato")}>Contatos</div>
-          </div>
+        <div className='text-white font-semibold'>Contatos</div>
+        <div className='text-white mt-1 flex gap-4 items-center px-4'>{Icontelephone} ( 99 ) 9 9999-9999</div>
+        <div className='text-white mt-1 flex gap-4 items-center px-4'>{IconWhatsApp} ( 99 ) 9 9999-9999</div>
+        <div className='text-white mt-1 flex gap-4 items-center px-4'>{IconEmail} email@emailempresa.com.br</div>
+        {/* <div className='text-white mt-3 flex gap-4 items-center'>{IconRelogio} Seg a Sexta: 8h às 17h / Sábado: 8h às 12h </div> */}
         </div>
+      </div>    
+
+      <div className='pt-10 text-white'>
+        <h6>Inscreva-se em nossa newsletter</h6>
+      <div>
+         {/*Nome*/}      
+         <label>          
+          <div className="flex shadow-sm mt-2">    
+          <input
+          // value={state.dados?.nome}
+          // onChange={nomeEvento}
+          type="text"
+          name="name"
+          id="name"
+          className={`flex-1 rounded-md appearance-none px-3 py-1 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+          placeholder="Nome"
+          />        
+          </div> 
+        </label>
+
+         {/*Nome Cliente */}      
+         <label className=''>           
+            <div className="flex shadow-sm mt-1">    
+            <input
+            // value={state.dados?.nome}
+            // onChange={nomeEvento}
+            type="text"
+            name="name"
+            id="name"
+            className={`flex-1 rounded-md appearance-none px-3 py-1 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+            placeholder="E-mail"
+            />        
+            </div> 
+          </label>
+          <div className='pt-2 flex justify-end'><button className='border border-[#fff] text-white px-4'>Enviar</button></div>
+      </div>
       </div>
 
-      <div className='mt-4 md:mt-0 flex justify-center md:justify-start'>
-        <div>
-        <div className='text-white font-semibold mt-3 flex gap-4 items-center'>{Icontelephone} ( 99 ) 9 9999-9999</div>
-        <div className='text-white font-semibold mt-3 flex gap-4 items-center'>{IconEmail} email@llemailempresa.com.br</div>
-        <div className='text-white font-semibold mt-3 flex gap-4 items-center'>{IconMaps} Endereço empresa</div>
-        <div className='text-white font-semibold mt-3 flex gap-4 items-center'>{IconRelogio} Seg a Sexta: 8h às 17h / Sábado: 8h às 12h </div>
+      <div className='mt-10'>
+        <div className='flex justify-center text-white font-extralight text-xl'><h6>Siga-nos em nossas redes sociais:</h6></div>
+        <div className='flex justify-center gap-4 mt-4'>          
+          <div>
+            <img                
+            src={"/instagram.png"}         
+            alt="instagram_greenenergy"
+            className={`w-10`}
+            />
+          </div>
+          <div>
+            <img                
+           src={"/face.png"}         
+           alt="instagram_greenenergy"
+           className={`w-10`}
+            />
+          </div>
+          <div>
+            <img                
+            src={"/youtube.png"}         
+            alt="instagram_greenenergy"
+            className={`w-10`}
+            />
+          </div>       
         </div>
-      </div>
-
-      <div className='flex justify-center mt-8 md:mt-0'>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.838445626914!2d-35.14958790000001!3d-8.894607900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x700630d382e4f07%3A0x7f7e50f169de0b16!2sAv.%20Jo%C3%A3o%20Francisco%20de%20Melo%2C%20520%20-%20Centro%2C%20S%C3%A3o%20Jos%C3%A9%20da%20Coroa%20Grande%20-%20PE%2C%2055565-000!5e0!3m2!1spt-BR!2sbr!4v1679436355331!5m2!1spt-BR!2sbr" width="300" height="300"></iframe>
       </div>
        
       </div>       
-
-      <div className='border-t-2'>
-       <p className='text-center text-white text-xs md:text-base mt-4'>GREEN ENERGY LTDA © Todos os direitos reservados</p>
-       <p className='text-center text-white text-sm md:text-base'>CNPJ: 30.451.857/0001-99</p> 
       </div>
-    
-      </div>
-
+      
+    <div className='text-xs bg-[#276211] px-4 py-2'>
+      <p className='text-white'>GREEN ENERGY LTDA © Todos os direitos reservados</p>
+      <p className='text-white'>CNPJ: 30.451.857/0001-99</p> 
+    </div>
+    </>
 
     )
 }
