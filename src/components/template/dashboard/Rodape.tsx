@@ -35,7 +35,7 @@ export function Rodape (){
           type="text"
           name="name"
           id="name"
-          className={`flex-1 rounded-md appearance-none px-3 py-1 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+          className={`flex-1 bg-white rounded-md appearance-none px-3 py-1 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
           placeholder="Nome"
           />        
           </div> 
@@ -50,7 +50,7 @@ export function Rodape (){
             type="text"
             name="name"
             id="name"
-            className={`flex-1 rounded-md appearance-none px-3 py-1 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+            className={`flex-1 bg-white rounded-md appearance-none px-3 py-1 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
             placeholder="E-mail"
             />        
             </div> 

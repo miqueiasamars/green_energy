@@ -19,7 +19,7 @@ export default function Layout(props: LayoutProps) {
          
             </Head>         
             
-            <div className=''>
+            <div className='bg-[#fff]'>
             <Menu />
             <MenuCelular/>
             </div>
