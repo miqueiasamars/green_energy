@@ -1,19 +1,17 @@
 import { Swiper, SwiperSlide, SwiperProps } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { IconSetaCD, IconSetaED } from '../icons';
-import { ChevronRight } from 'react-feather';
 
 export default function MySlider() {
 
   return (
   <Swiper
-  modules={[Navigation, Pagination]}
-  navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+  modules={[Navigation, Pagination, Autoplay]}
   pagination={{ clickable: true }}
+  autoplay={{ delay: 4000, disableOnInteraction: false }}
   className="mySwiper"
   >
   
@@ -30,7 +28,7 @@ export default function MySlider() {
         {/* testes e pontinhos */}
         <div className="py-8 px-6 flex justify-center">
           <div>
-            <div className="text-2xl text-center text-[#30261D] custom-font-roboto-500 py-10">Custos reduzidos no armazenamento e no transporte, devido a alta densidade do produto.</div>         
+            <div className="text-2xl text-center text-[#30261D] custom-font-Jost">Custos reduzidos no armazenamento e no transporte, devido a alta densidade do produto.</div>         
           </div>
         </div>
 
@@ -51,7 +49,7 @@ export default function MySlider() {
         {/* testes e pontinhos */}
         <div className="py-8 px-6 flex justify-center">
           <div>
-            <div className="text-2xl text-center text-[#30261D] custom-font-roboto-500 py-10">E um combustível ecologicamente correto, limpo e muito eficiente.</div>         
+            <div className="text-2xl text-center text-[#30261D] custom-font-Jost">E um combustível ecologicamente correto, limpo e muito eficiente.</div>         
           </div>
         </div>
 
@@ -72,7 +70,7 @@ export default function MySlider() {
         {/* testes e pontinhos */}
         <div className="py-8 px-6 flex justify-center">
           <div>
-            <div className="text-2xl text-center text-[#30261D] custom-font-roboto-500 py-10">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética, garantindo o melhor desempenho dos equipamentos de queima.</div>         
+            <div className="text-2xl text-center text-[#30261D] custom-font-Jost">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética.</div>         
           </div>
         </div>
 
@@ -93,7 +91,7 @@ export default function MySlider() {
         {/* testes e pontinhos */}
         <div className="py-8 px-6 flex justify-center">
           <div>
-            <div className="text-2xl text-center text-[#30261D] custom-font-roboto-500 py-10">Sua fabricação é proveniente de uma única matéria prima, dispensando o uso de produtos químicos.</div>         
+            <div className="text-2xl text-center text-[#30261D] custom-font-Jost">Sua fabricação é proveniente de uma única matéria prima, dispensando o uso de produtos químicos.</div>         
           </div>
         </div>
 
@@ -114,7 +112,7 @@ export default function MySlider() {
         {/* testes e pontinhos */}
         <div className="py-8 px-6 flex justify-center">
           <div>
-            <div className="text-2xl text-center text-[#30261D] custom-font-roboto-500 py-10">Por não prejudicar o meio ambiente, tem o uso liberado pelo IBMA (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis).</div>         
+            <div className="text-2xl text-center text-[#30261D] custom-font-Jost">Por não prejudicar o meio ambiente, tem o uso liberado pelo IBMA (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis).</div>         
           </div>
         </div>
 
@@ -135,7 +133,7 @@ export default function MySlider() {
         {/* testes e pontinhos */}
         <div className="py-8 px-6 flex justify-center">
           <div>
-            <div className="text-2xl text-center text-[#30261D] custom-font-roboto-500 py-10">Redução na emissão de fumaça, liberando menos dióxido de carbono do que os combustíveis fósseis.</div>         
+            <div className="text-2xl text-center text-[#30261D] custom-font-Jost">Redução na emissão de fumaça, liberando menos dióxido de carbono do que os combustíveis fósseis.</div>         
           </div>
         </div>
 
@@ -156,7 +154,7 @@ export default function MySlider() {
         {/* testes e pontinhos */}
         <div className="py-8 px-6 flex justify-center">
           <div>
-            <div className="text-2xl text-center text-[#30261D] custom-font-roboto-500 py-10">E uma energia renovável proveniente de matéria prima que seria descartada na natureza.</div>         
+            <div className="text-2xl text-center text-[#30261D] custom-font-Jost">E uma energia renovável proveniente de matéria prima que seria descartada na natureza.</div>         
           </div>
         </div>
 
@@ -166,15 +164,6 @@ export default function MySlider() {
 
   {/* mais slides aqui */}
 
-  {/* botões de navegação */}
-  <div className='-mt-14'>
-  <div className="swiper-button-next text-white font-bold py-8 px-6 rounded -mr-3"> 
-  <ChevronRight size={5} />
-  </div>
-  <div className="swiper-button-prev text-white font-bold py-8 px-6 rounded -ml-3">   
-   <ChevronRight size={5} />
-  </div>
-  </div>
 </Swiper>
 
   )

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 html,
 body {
@@ -12,6 +13,11 @@ body {
 
 .my-background {
   background-image: url('/GreenEnergy_floresta.jpg');
+}
+
+.custom-font-Jost {
+  font-family: 'Jost', sans-serif;
+  /* adiciona outras propriedades de estilo */
 }
 
 .custom-font-roboto {
