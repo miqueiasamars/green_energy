@@ -121,7 +121,7 @@ setStatusBaner(statusBaner-1)
           
           <div className="flex justify-between gap-2">
             <div className="pt-2">Empresas ESG investem em tecnologia e sustentabilidade para um mundo melhor</div>
-            <div className=""><a href="https://jornaldebrasilia.com.br/blogs-e-colunas/analice-nicolau/empresas-esg-investem-em-tecnologia-e-sustentabilidade-para-um-mundo-melhor/" target="_blank">{IconSetaD}</a></div>
+            <div className=""><a href="https://jornaldebrasilia.com.br/blogs-e-colunas/analice-nicolau/empresas-esg-investem-em-tecnologia-e-sustentabilidade-para-um-mundo-melhor/">{IconSetaD}</a></div>
           </div>
         </div>
 
@@ -129,7 +129,7 @@ setStatusBaner(statusBaner-1)
           <div className=""><h1>12 ABR, 2023</h1></div>
           <div className="flex justify-between gap-2">
             <div className="pt-2">Novas metas para acelerar a transição energética na União Europeia</div>
-            <div className=""><a href="https://www.novoperfil.pt/Artigos/470792-Novas-metas-para-acelerar-a-transicao-energetica-na-Uniao-Europeia.html" target="_blank">{IconSetaD}</a></div>
+            <div className=""><a href="https://www.novoperfil.pt/Artigos/470792-Novas-metas-para-acelerar-a-transicao-energetica-na-Uniao-Europeia.html">{IconSetaD}</a></div>
           </div>
         </div>
 
@@ -137,7 +137,7 @@ setStatusBaner(statusBaner-1)
           <div className=""><h1>09 ABR, 2023</h1></div>
           <div className="flex justify-between gap-2">
             <div className="pt-2">Crédito de carbono: Como o Brasil pode (e deve) ser pioneiro nesse novo mercado?</div>
-            <div className=""><a href="https://www.moneytimes.com.br/credito-de-carbono-brasil-pioneiro-novo-mercado/" target="_blank">{IconSetaD}</a></div>
+            <div className=""><a href="https://www.moneytimes.com.br/credito-de-carbono-brasil-pioneiro-novo-mercado/">{IconSetaD}</a></div>
           </div>
         </div>
 
