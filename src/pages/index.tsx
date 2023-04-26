@@ -88,22 +88,26 @@ setStatusBaner(statusBaner-1)
       <div className="px-6 pt-8"><div className="border-b-2"></div></div>
       
       {/* baner falndo sobre */}
-      <div className="px-10 py-10 grid grid-col-1 gap-6 bg-[url('/GreenEnergy_floresta.jpg')] bg-center bg-no-repeat w-screen">
+      <div className="px-10 py-10 grid grid-col-1 gap-6 bg-[url('/GreenEnergy_floresta.jpg')] bg-center bg-no-repeat w-full">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white">
-          <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Texto:</h2></div>
-          <div className="pt-4"><h2>São pequenos e compactos, o que torna o armazenamento muito fácil. Eles podem ser facilmente empilhados em sacos ou em silos, o que torna a logística de entrega mais simples.</h2></div>
+          <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>O que são pellets:</h2></div>
+          <div className="pt-4"><h2>Os pellets são formados por resíduos de madeira prensados em formato cilíndrico, que possuem entre 6 e 8 milímetros <a className="underline cursor-pointer" href="">Saiba mais ...</a></h2></div>
+          <div className="flex justify-center pt-4"><img src="/greenenergy_center_01.png" className="w-full"/></div>
         </div>
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white">
-          <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Texto:</h2></div>
-          <div className="pt-4"><h2>São pequenos e compactos, o que torna o armazenamento muito fácil. Eles podem ser facilmente empilhados em sacos ou em silos, o que torna a logística de entrega mais simples.</h2></div>
+          <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Como podem ser utilizados:</h2></div>
+          <div className="pt-4"><h2>Os pellets são utilizados como geradores de calor, energia e solução higiênica para animais. Podendo ser utilizados <a className="underline cursor-pointer" href="">Saiba mais ...</a></h2></div>
+          <div className="flex justify-center pt-4"><img src="/greenenergy_center_02.png" className="w-full"/></div>
         </div>
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white"> 
-          <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Texto:</h2></div>
-          <div className="pt-4"><h2>São pequenos e compactos, o que torna o armazenamento muito fácil. Eles podem ser facilmente empilhados em sacos ou em silos, o que torna a logística de entrega mais simples.</h2></div>
+          <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Pellets com certificado ENplus A1:</h2></div>
+          <div className="pt-4"><h2>Ao comprar pellets, o comprador deve estar atento a certificação que garante a procedência do produto tanto pela <a className="underline cursor-pointer" href="">Saiba mais ...</a></h2></div>
+          <div className="flex justify-center pt-4"><img src="/greenenergy_center_03.png" className="w-full"/></div>
         </div>
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white">
-          <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Texto:</h2></div>
-          <div className="pt-4"><h2>São pequenos e compactos, o que torna o armazenamento muito fácil. Eles podem ser facilmente empilhados em sacos ou em silos, o que torna a logística de entrega mais simples.</h2></div>
+          <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Vantagens econômicas e ecológicas:</h2></div>
+          <div className="pt-4"><h2>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria-prima <a className="underline cursor-pointer" href="">Saiba mais ...</a></h2></div>
+          <div className="flex justify-center pt-4"><img src="/greenenergy_center_04.png" className="w-full"/></div>
         </div>
       </div>
       
@@ -113,26 +117,27 @@ setStatusBaner(statusBaner-1)
         <div className="text-2xl custom-font-roboto">Notícias Recentes</div>
 
         <div className="border-b py-2 pt-6">
-          <div className=""><h1>12 ABR, 2023</h1></div>
+          <div className=""><h1>24 ABR, 2023</h1></div>
+          
           <div className="flex justify-between gap-2">
-            <div className="pt-2">texto texto texto texto texto texto texto texto</div>
-            <div className="">{IconSetaD}</div>
+            <div className="pt-2">Empresas ESG investem em tecnologia e sustentabilidade para um mundo melhor</div>
+            <div className=""><a href="https://jornaldebrasilia.com.br/blogs-e-colunas/analice-nicolau/empresas-esg-investem-em-tecnologia-e-sustentabilidade-para-um-mundo-melhor/" target="_blank">{IconSetaD}</a></div>
           </div>
         </div>
 
         <div className="border-b py-2 pt-6">
           <div className=""><h1>12 ABR, 2023</h1></div>
           <div className="flex justify-between gap-2">
-            <div className="pt-2">texto texto texto texto texto texto texto texto</div>
-            <div className="">{IconSetaD}</div>
+            <div className="pt-2">Novas metas para acelerar a transição energética na União Europeia</div>
+            <div className=""><a href="https://www.novoperfil.pt/Artigos/470792-Novas-metas-para-acelerar-a-transicao-energetica-na-Uniao-Europeia.html" target="_blank">{IconSetaD}</a></div>
           </div>
         </div>
 
         <div className="border-b py-2 pt-6">
-          <div className=""><h1>12 ABR, 2023</h1></div>
+          <div className=""><h1>09 ABR, 2023</h1></div>
           <div className="flex justify-between gap-2">
-            <div className="pt-2">texto texto texto texto texto texto texto texto</div>
-            <div className="">{IconSetaD}</div>
+            <div className="pt-2">Crédito de carbono: Como o Brasil pode (e deve) ser pioneiro nesse novo mercado?</div>
+            <div className=""><a href="https://www.moneytimes.com.br/credito-de-carbono-brasil-pioneiro-novo-mercado/" target="_blank">{IconSetaD}</a></div>
           </div>
         </div>
 
@@ -141,7 +146,7 @@ setStatusBaner(statusBaner-1)
 
       <div className="mt-10">
         <div>
-          <div className="text-center custom-font-roboto text-2xl"><a className="custom-font-caveat">CONEHÇA </a> as nossas marcas</div>
+          <div className="text-center custom-font-roboto text-2xl"><a className="custom-font-caveat">CONHEÇA </a> as nossas marcas</div>
           <div className="flex gap-6 justify-center pt-8">
           <div className="border rounded-full px-6 py-10 bg-white shadow-lg">Marca 1</div>
           <div className="border rounded-full px-6 py-10 bg-white shadow-lg">Marca 2</div>

@@ -95,7 +95,7 @@ useEffect(()=>{
               </div> 
             </label>
 
-            {/*Nome Cliente */}      
+            {/*Nome Cliente */}
             <label>
               <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Telefone</p>
               <div className="flex shadow-sm">    
