@@ -92,17 +92,17 @@ setStatusBaner(statusBaner-1)
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white">
           <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>O que são pellets:</h2></div>
           <div className="pt-4"><h2>Os pellets são formados por resíduos de madeira prensados em formato cilíndrico, que possuem entre 6 e 8 milímetros <a className="underline cursor-pointer" href="">Saiba mais ...</a></h2></div>
-          <div className="flex justify-center pt-4"><img src="/greenenergy_center_01.png" className="w-full"/></div>
+          <div className="flex justify-center pt-4"><img src="/greenenergy_center_02.png" className="w-full"/></div>
         </div>
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white">
           <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Como podem ser utilizados:</h2></div>
           <div className="pt-4"><h2>Os pellets são utilizados como geradores de calor, energia e solução higiênica para animais. Podendo ser utilizados <a className="underline cursor-pointer" href="">Saiba mais ...</a></h2></div>
-          <div className="flex justify-center pt-4"><img src="/greenenergy_center_02.png" className="w-full"/></div>
+          <div className="flex justify-center pt-4"><img src="/greenenergy_center_03.png" className="w-full"/></div>
         </div>
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white"> 
           <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Pellets com certificado ENplus A1:</h2></div>
           <div className="pt-4"><h2>Ao comprar pellets, o comprador deve estar atento a certificação que garante a procedência do produto tanto pela <a className="underline cursor-pointer" href="">Saiba mais ...</a></h2></div>
-          <div className="flex justify-center pt-4"><img src="/greenenergy_center_03.png" className="w-full"/></div>
+          <div className="flex justify-center pt-4"><img src="/greenenergy_center_01.png" className="w-full"/></div>
         </div>
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white">
           <div className="text-2xl custom-font-roboto text-[#3A881B]"><h2>Vantagens econômicas e ecológicas:</h2></div>
