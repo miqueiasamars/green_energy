@@ -80,7 +80,7 @@ useEffect(()=>{
         {/* testes e pontinhos */}
         <div className="py-20 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">E um combustível ecologicamente correto, limpo e muito eficiente.</div>         
+            <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">E um combustível ecologicamente correto, limpo e muito eficiente.</div>         
           </div>
         </div>
 
@@ -108,7 +108,7 @@ useEffect(()=>{
         {/* testes e pontinhos */}
         <div className="py-16 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética.</div>         
+            <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética.</div>         
           </div>
         </div>
 
