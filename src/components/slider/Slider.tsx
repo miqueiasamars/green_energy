@@ -51,7 +51,7 @@ useEffect(()=>{
         </div>
 
         {/* testes e pontinhos */}
-        <div className="py-16 md:py-8 px-6 flex justify-center">
+        <div className="py-16 md:py-7 px-6 flex justify-center">
           <div className=''>
             <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">Custos reduzidos no armazenamento e no transporte, devido a alta densidade do produto.</div>         
           </div>
@@ -78,9 +78,9 @@ useEffect(()=>{
         </div>
 
         {/* testes e pontinhos */}
-        <div className="py-24 md:py-8 px-6 flex justify-center">
+        <div className="py-20 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-3 text-center text-[#30261D] custom-font-libre-bodoni">E um combustível ecologicamente correto, limpo e muito eficiente.</div>         
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">E um combustível ecologicamente correto, limpo e muito eficiente.</div>         
           </div>
         </div>
 
@@ -106,9 +106,9 @@ useEffect(()=>{
         </div>
 
         {/* testes e pontinhos */}
-        <div className="py-16 md:py-8 px-6 flex justify-center">
+        <div className="py-16 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-3 text-center text-[#30261D] custom-font-libre-bodoni">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética.</div>         
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética.</div>         
           </div>
         </div>
 
@@ -134,9 +134,9 @@ useEffect(()=>{
         </div>
 
         {/* testes e pontinhos */}
-        <div className="py-14 md:py-8 px-6 flex justify-center">
+        <div className="py-14 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-3 text-center text-[#30261D] custom-font-libre-bodoni">Sua fabricação é proveniente de uma única matéria prima, dispensando o uso de produtos químicos.</div>         
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Sua fabricação é proveniente de uma única matéria prima, dispensando o uso de produtos químicos.</div>         
           </div>
         </div>
 
@@ -161,9 +161,9 @@ useEffect(()=>{
         </div>
 
         {/* testes e pontinhos */}
-        <div className="py-7 md:py-8 px-6 flex justify-center">
+        <div className="py-7 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-3 text-center text-[#30261D] custom-font-libre-bodoni">Por não prejudicar o meio ambiente, tem o uso liberado pelo IBMA (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis).</div>         
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Por não prejudicar o meio ambiente, tem o uso liberado pelo IBMA (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis).</div>         
           </div>
         </div>
 
@@ -188,9 +188,9 @@ useEffect(()=>{
         </div>
 
         {/* testes e pontinhos */}
-        <div className="py-16 md:py-8 px-6 flex justify-center">
+        <div className="py-16 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-3 text-center text-[#30261D] custom-font-libre-bodoni">Redução na emissão de fumaça, liberando menos dióxido de carbono do que os combustíveis fósseis.</div>         
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Redução na emissão de fumaça, liberando menos dióxido de carbono do que os combustíveis fósseis.</div>         
           </div>
         </div>
 
@@ -215,9 +215,9 @@ useEffect(()=>{
         </div>
 
         {/* testes e pontinhos */}
-        <div className="py-16 md:py-8 px-6 flex justify-center">
+        <div className="py-16 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-3 text-center text-[#30261D] custom-font-libre-bodoni">E uma energia renovável proveniente de matéria prima que seria descartada na natureza.</div>         
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">E uma energia renovável proveniente de matéria prima que seria descartada na natureza.</div>         
           </div>
         </div>
 

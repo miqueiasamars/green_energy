@@ -11,9 +11,9 @@ export function Rodape (){
 
       <div className=''>
 
-      <div className='px-2 flex justify-center'>
+      <div className='px-2 text-sm flex justify-center'>
         <div>
-        <div className='text-white font-semibold'>Contatos</div>
+        <div className='text-white font-semibold px-4'>Contatos</div>
         {/* <div className='text-white mt-1 flex gap-4 items-center px-4'>{Icontelephone} ( 41 ) 9 9769-7540</div> */}
         <div className='text-white mt-1 flex gap-4 items-center px-4'>{IconWhatsApp} ( 41 ) 9 9769-7540</div>
         <div className='text-white mt-1 flex gap-4 items-center px-4'>{IconEmail} jordane.silva@greenenergypellets.com.br</div>

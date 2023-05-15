@@ -4,7 +4,7 @@ import Layout from "../components/template/dashboard/Layout";
 import { Context } from "../data/contexts/Context";
 import { IconChevron, IconChevronD, IconEyeF, IconSetaCD, IconSetaD, IconSetaED } from "../components/icons";
 import MySlider from "../components/slider/Slider";
-import { Link } from "react-feather";
+import router from "next/router";
 
 export default function MyComponent() {
 
@@ -74,7 +74,7 @@ setStatusBaner(statusBaner-1)
       <div className="flex justify-end">
         <div className=" rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
           <div className="text-2xl font-semibold text-[#3A881B]"><h2>O que são pellets:</h2></div>
-          <div className="pt-4 text-lg"><h2>Os pellets são formados por resíduos de madeira prensados em formato cilíndrico, que possuem entre 6 e 8 milímetros <Link className="underline cursor-pointer" href="/produtos">Saiba mais...</Link></h2></div>
+          <div className="pt-4 text-lg"><h2>Os pellets são formados por resíduos de madeira prensados em formato cilíndrico, que possuem entre 6 e 8 milímetros <a className="underline cursor-pointer" onClick={()=>router.push("/produtos")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_02.png" className="w-full md:w-96"/></div>
         </div>
       </div>
@@ -82,7 +82,7 @@ setStatusBaner(statusBaner-1)
       <div className="flex justify-start">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
           <div className="text-2xl font-semibold text-[#3A881B]"><h2>Como podem ser utilizados:</h2></div>
-          <div className="pt-4 text-lg"><h2>Os pellets são utilizados como geradores de calor, energia e solução higiênica para animais. Podendo ser utilizados <Link className="underline cursor-pointer" href="/produtos">Saiba mais...</Link></h2></div>
+          <div className="pt-4 text-lg"><h2>Os pellets são utilizados como geradores de calor, energia e solução higiênica para animais. Podendo ser utilizados <a className="underline cursor-pointer" onClick={()=>router.push("/produtos")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_03.png" className="w-full md:w-96"/></div>
         </div>
       </div>
@@ -90,7 +90,7 @@ setStatusBaner(statusBaner-1)
       <div className="flex justify-end">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md"> 
           <div className="text-2xl font-semibold text-[#3A881B]"><h2>Pellets com certificado ENplus A1:</h2></div>
-          <div className="pt-4 text-lg"><h2>Ao comprar pellets, o comprador deve estar atento a certificação que garante a procedência do produto tanto pela <Link className="underline cursor-pointer" href="/produtos">Saiba mais...</Link></h2></div>
+          <div className="pt-4 text-lg"><h2>Ao comprar pellets, o comprador deve estar atento a certificação que garante a procedência do produto tanto pela <a className="underline cursor-pointer" onClick={()=>router.push("/produtos")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_01.png" className="w-full md:w-96"/></div>
         </div>
       </div>
@@ -98,7 +98,7 @@ setStatusBaner(statusBaner-1)
       <div className="flex justify-start">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
           <div className="text-2xl font-semibold text-[#3A881B]"><h2>Vantagens econômicas e ecológicas:</h2></div>
-          <div className="pt-4 text-lg"><h2>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria-prima <Link className="underline cursor-pointer" href="/produtos">Saiba mais...</Link></h2></div>
+          <div className="pt-4 text-lg"><h2>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria-prima <a className="underline cursor-pointer" onClick={()=>router.push("/produtos")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_04.png" className="w-full md:w-96"/></div>
         </div>
       </div>
@@ -115,7 +115,7 @@ setStatusBaner(statusBaner-1)
         
         <div className="flex justify-between gap-2">
           <div className="pt-2">Empresas ESG investem em tecnologia e sustentabilidade para um mundo melhor</div>
-          <div className=""><Link href="https://jornaldebrasilia.com.br/blogs-e-colunas/analice-nicolau/empresas-esg-investem-em-tecnologia-e-sustentabilidade-para-um-mundo-melhor/">{IconSetaD}</Link></div>
+          <div className=""><a onClick={()=>router.push("https://jornaldebrasilia.com.br/blogs-e-colunas/analice-nicolau/empresas-esg-investem-em-tecnologia-e-sustentabilidade-para-um-mundo-melhor/")}>{IconSetaD}</a></div>
         </div>
       </div>
 
@@ -123,7 +123,7 @@ setStatusBaner(statusBaner-1)
         <div className=""><h1>12 ABR, 2023</h1></div>
         <div className="flex justify-between gap-2">
           <div className="pt-2">Novas metas para acelerar a transição energética na União Europeia</div>
-          <div className=""><Link href="https://www.novoperfil.pt/Artigos/470792-Novas-metas-para-acelerar-a-transicao-energetica-na-Uniao-Europeia.html">{IconSetaD}</Link></div>
+          <div className=""><a onClick={()=>router.push("https://www.novoperfil.pt/Artigos/470792-Novas-metas-para-acelerar-a-transicao-energetica-na-Uniao-Europeia.html")}>{IconSetaD}</a></div>
         </div>
       </div>
 
@@ -131,7 +131,7 @@ setStatusBaner(statusBaner-1)
           <div className=""><h1>09 ABR, 2023</h1></div>
           <div className="flex justify-between gap-2">
             <div className="pt-2">Crédito de carbono: Como o Brasil pode (e deve) ser pioneiro nesse novo mercado?</div>
-            <div className=""><Link href="https://www.moneytimes.com.br/credito-de-carbono-brasil-pioneiro-novo-mercado/">{IconSetaD}</Link></div>
+            <div className=""><a onClick={()=>router.push("https://www.moneytimes.com.br/credito-de-carbono-brasil-pioneiro-novo-mercado/")}>{IconSetaD}</a></div>
           </div>
         </div>
 
@@ -140,7 +140,7 @@ setStatusBaner(statusBaner-1)
 
       <div className="mt-10">
         <div>
-          <div className="text-center font-semibold text-2xl"><Link className="custom-font-caveat">CONHEÇA </Link> nossa linha para pets</div>
+          <div className="text-center font-semibold text-2xl"><a className="custom-font-caveat">CONHEÇA </a> nossa linha para pets</div>
           <div className="flex gap-6 justify-center pt-8">
           <div className="border border-[#3A881B] rounded-full px-4 py-4 bg-white shadow-lg"> <img src="/greenenergy_pets.png" className="w-36"/></div>
           </div>
