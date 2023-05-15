@@ -12,58 +12,6 @@ const {state, dispatch} = useContext(Context)
 
 const [tela, setTela] = useState(0);
 
-const div1Ref = useRef<HTMLDivElement>(null);
-const div2Ref = useRef<HTMLDivElement>(null);
-const div3Ref = useRef<HTMLDivElement>(null);
-const div4Ref = useRef<HTMLDivElement>(null);
-const [isVisible1, setIsVisible1] = useState(false);
-const [isVisible2, setIsVisible2] = useState(false);
-const [isVisible3, setIsVisible3] = useState(false);
-const [isVisible4, setIsVisible4] = useState(false);
-
-useEffect(() => {
-  const observer1 = new IntersectionObserver(([entry]) => {
-    setIsVisible1(entry.isIntersecting);
-  });
-  const observer2 = new IntersectionObserver(([entry]) => {
-    setIsVisible2(entry.isIntersecting);
-  });
-  const observer3 = new IntersectionObserver(([entry]) => {
-    setIsVisible3(entry.isIntersecting);
-  });
-  const observer4 = new IntersectionObserver(([entry]) => {
-    setIsVisible4(entry.isIntersecting);
-  });
-
-  if (div1Ref.current) {
-    observer1.observe(div1Ref.current);
-  }
-  if (div2Ref.current) {
-    observer2.observe(div2Ref.current);
-  }
-  if (div3Ref.current) {
-    observer3.observe(div3Ref.current);
-  }
-  if (div4Ref.current) {
-    observer4.observe(div4Ref.current);
-  }
-
-  return () => {
-    if (div1Ref.current) {
-      observer1.unobserve(div1Ref.current);
-    }
-    if (div2Ref.current) {
-      observer2.unobserve(div2Ref.current);
-    }
-    if (div3Ref.current) {
-      observer3.unobserve(div3Ref.current);
-    }
-    if (div4Ref.current) {
-      observer4.unobserve(div4Ref.current);
-    }
-  };
-}, [div1Ref, div2Ref, div3Ref, div4Ref]);
-
 try{
   window.addEventListener('resize', function () {
       const x = window.screen.width;
