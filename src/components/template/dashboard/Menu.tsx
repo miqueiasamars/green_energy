@@ -13,6 +13,7 @@ const statusmenu = state.dados.menu
 
 const [drawer, setDrawer] = useState('0')
 const [tela, setTela] = useState(0);
+const [status, setStatus] = useState(false)
 
 try{
     window.addEventListener('resize', function () {
@@ -84,66 +85,73 @@ const menu6 = () =>{
         });
 }
 
+const brasil = () =>{
+  return(
+      <div>
+      <img                
+        src={"/greenenergy_brasil.png"}         
+        alt="Produtos-copps"
+        className={`cursor-pointer w-6`}
+      />
+      </div>
+  )
+}
+
+const usa = () =>{
+  return(
+      <div>
+      <img                
+        src={"/greenenergy_usa.png"}         
+        alt="Produtos-copps"
+        className={`cursor-pointer w-6`}
+      />
+      </div>
+  )
+}
+
+
 return (
 <> 
-{tela > 900&&
-    <div className='bg-[#fff]/50 minha-div flex flex-row items-center backdrop-blur-sm font-roboto-400 fixed bottom-0 top-0 w-full h-20 text-white'>     
+{tela >= 768&&
+<div className='minha-div'> 
+    
+    <div className='flex'>
+    <div className='h-12 bg-[#e5e4e4]/50 w-screen flex justify-end px-20 items-center gap-3'>Você está no {brasil()} ou {usa()}</div>
+    </div>
 
-        <div className='basis-1/2'></div>
-        
-        <div className='flex basis-1/2'> 
-            {/*  Produtos de produtores  */}
-            {
-            <div onClick={menu1} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#ffffff]':'text-[#fff]'} hover:text-[#808180]`}>
-            <div className={` transition ease-in-out delay-150 hover:translate-z-4 hover:scale-125 duration-200`}>
-                <p>Home</p>
-            </div>
-            </div>
-            } 
-             {/*  Produtos de produtores  */}
-             {
-            // <div onClick={menu2} className={`px-5 py-3 cursor-pointer ${statusmenu  === '2'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
-            // <div className={` transition ease-in-out delay-150 hover:translate-z-4 hover:scale-125 duration-200`}>
-            //     <p>Sobre</p>
-            // </div>
-            // </div>
-            } 
-             {/*  Produtos de produtores  */}
-             {
-            // <div onClick={menu3} className={`px-5 py-3 cursor-pointer ${statusmenu  === '3'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
-            // <div className={` transition ease-in-out delay-150 hover:translate-z-4 hover:scale-125 duration-200`}>
-            //     <p>Produtos</p>
-            // </div>
-            // </div>
-            } 
-             {/*  Produtos de produtores  */}
-             {
-            // <div onClick={menu4} className={`px-5 py-3 cursor-pointer ${statusmenu  === '4'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
-            // <div className={` transition ease-in-out delay-150  hover:translate-z-4 hover:scale-125 duration-200`}>
-            //     <p>Loja</p>
-            // </div>
-            // </div>
-            } 
-             {/*  Produtos de produtores  */}
-             {
-            // <div onClick={menu5} className={`px-5 py-3 cursor-pointer ${statusmenu  === '5'?'text-[#67ff2b]':'text-[#fff]'} hover:text-[#67ff2b]`}>
-            // <div className={` transition ease-in-out delay-150  hover:translate-z-4 hover:scale-125 duration-200`}>
-            //     <p>Contato</p>
-            // </div>
-            // </div>
-            } 
-             {/*  Produtos de produtores  */}
-             {
-            // <div onClick={menu6} className={`border rounded-md border-[] px-4 py-3 cursor-pointer ${statusmenu  === '6'?'border-[#67ff2b] text-[#67ff2b]':'text-[#fff]'} hover:border-[#67ff2b] hover:text-[#67ff2b]`}>
-            // <div className={`transition ease-in-out delay-150 hover:translate-z-4 duration-200`}>
-            //     <p>Orçamento</p>
-            // </div>
-            // </div>
-            }               
-                  
-        </div> 
+    <nav className="fixed  w-full flex items-center justify-between px-5 py-3 backdrop-blur-sm bg-[#ffffff]/50">
 
-    </div> 
+      <div className="flex items-center flex-shrink-0 px-24">
+        <img src="/logo.png" alt="Logo" className="h-16"/>
+      </div>
+
+      <div className=" flex justify-end items-center">
+
+        <div className="text-sm mr-10 gap-8 flex justify-center items-center">
+          <div className='flex justify-center'>  
+
+          <button onClick={menu1} className=" pl-5 text-lg transition font-semibold ease-in-out delay-150 hover:scale-125 duration-75 text-center text-white bg-[#3A881B] rounded-md px-6 py-1">
+              Home
+            </button>
+           </div>
+            <button onClick={menu2} className="text-lg transition font-semibold ease-in-out delay-150 hover:scale-125 duration-75 text-white bg-[#3A881B] rounded-md px-6 py-1">
+              Sobre
+            </button>
+
+            {/* <button onClick={menu3} className="text-lg transition font-semibold ease-in-out delay-150 hover:scale-125 duration-75 text-white bg-[#3A881B] rounded-md px-6 py-1">
+              Produtos
+            </button> */}
+
+
+            <button onClick={menu5} className="text-lg transition font-semibold ease-in-out delay-150 hover:scale-125 duration-75 text-[#3A881B] bg-white rounded-md px-6 py-1 border border-[#3A881B]">
+              Contato
+            </button>
+
+        </div>
+
+    </div>
+    </nav>
+</div>
 }
 </>
 )

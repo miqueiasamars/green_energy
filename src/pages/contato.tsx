@@ -40,18 +40,19 @@ useEffect(()=>{
     <div className={`bg-[#ffffff] text-[#494949]`}>
     <Layout>
    
-      <div className="flex justify-center items-center bg-center shadow-md shadow-[#4abe1c]/40" style={{ backgroundImage: 'url(/greenenergy_pellets.png)', height:300 }}>
-             <div className="text-white text-6xl font-bold pt-4">CONTATO</div>
-      </div>
+      <div className="mt-20 sm:mt-0 ">
+        <img className="shadow-md shadow-[#3A881B]/40" alt="" src="/greenenergy_pellets_carrosel_09_md.png"  />
+      </div>  
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-6 md:px-16 lg:px-40 pt-10">
         <div className="border border-[#3A881B] py-6 rounded-md shadow-sm">
           <p className="flex justify-center text-[#3A881B]">{Icontelephone}</p>
-          <p className="text-center mt-3 font-semibold">(99) 9 9999-9999 </p>
+          <p className="text-center mt-3 font-semibold">( 41 ) 9 9769-7540 </p>
         </div>       
         <div className="border border-[#3A881B] py-6 rounded-md shadow-sm">
           <p className="flex justify-center text-[#3A881B]">{IconEmail}</p>
-          <p  className="text-center mt-3 font-semibold">email@email.com.br</p>      
+          <p  className="text-center pt-3 font-semibold">jordane.silva@greenenergypellets.com.br</p> 
+          <p  className="text-center pt-3 font-semibold">raquel.sanagiotto@greenenergypellets.com.br</p>      
         </div>
       </div>
       
@@ -72,7 +73,7 @@ useEffect(()=>{
           type="text"
           name="name"
           id="name"
-          className={`flex-1 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+          className={`bg-[#fff] flex-1 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#67ff2b] focus:z-10`}
           placeholder=""
           />        
           </div> 
@@ -89,7 +90,7 @@ useEffect(()=>{
               type="text"
               name="name"
               id="name"
-              className={`flex-1 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+              className={`bg-[#fff] flex-1 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#67ff2b] focus:z-10`}
               placeholder=""
               />        
               </div> 
@@ -105,7 +106,7 @@ useEffect(()=>{
               type="text"
               name="name"
               id="name"
-              className={`flex-1 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+              className={`bg-[#fff] flex-1 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#67ff2b] focus:z-10`}
               placeholder=""
               />        
               </div> 
@@ -122,7 +123,7 @@ useEffect(()=>{
           type="text"
           name="name"
           id="name"
-          className={`flex-1 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+          className={`bg-[#fff] flex-1 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#67ff2b] focus:z-10`}
           placeholder=""
           />        
           </div> 
@@ -137,7 +138,7 @@ useEffect(()=>{
           // onChange={nomeEvento}
           name="name"
           id="name"
-          className={`flex-1 h-36 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#040a02] focus:z-10`}
+          className={`bg-[#fff] flex-1 h-36 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#67ff2b] focus:z-10`}
           placeholder=""
           />        
           </div> 

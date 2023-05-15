@@ -92,25 +92,25 @@ useEffect(()=>{
     <div className={`bg-[#ffffff] text-[#494949]`}>
     <Layout>
    
-      <div className="flex justify-center items-center bg-center shadow-md shadow-[#4abe1c]/40" style={{ backgroundImage: 'url(/greenenergy_pellets.png)', height:300 }}>
-             <div className={`text-white text-6xl font-bold pt-4`}>SOBRE</div>
+      <div className="mt-20 sm:mt-0 ">
+        <img className="shadow-md shadow-[#3A881B]/40" alt="" src="/greenenergy_pellets_carrosel_08_md.png"  />
       </div>      
 
       <div className="px-10 md:px-40 py-10 ge_container">
-        <h2 className={`text-2xl font-bold text-[#4abe1c] pt-10 ${isVisible1&&'slide-in-text'}`} ref={div1Ref}>QUEM SOMOS:</h2>
-        <h3 className={`${isVisible1&&'slide-in-text-reverse'}`}>
+        <h2 className={`text-2xl font-bold text-[#3A881B] pt-10 `}>QUEM SOMOS:</h2>
+        <h3>
           <p className="text-xl font-semibold pt-6">A Green Energy é uma empresa Brasileira, voltada para a produção de energia renovável. Nos produzimos o que a de melhor em biomassa de pellets, utilizando matéria prima proveniente da serragem de madeira sem prejudicar o meio ambiente, garantindo o padrão e a qualidade de nossos produtos.</p>
           <p className="text-xl font-semibold pt-6">Acompanhando as tendências do mercado e desenvolvendo produtos sustentáveis a Green Energy investe no aperfeiçoamento das suas tecnologias de produção, com o objetivo de encontrar a união perfeita entre esses recursos. Todos os nossos produtos são adequados à norma ENPlus A1.</p>
         </h3>
 
-        <h2 className={`text-2xl font-bold text-[#4abe1c] pt-10 ${isVisible2&&'slide-in-text'}`} ref={div2Ref} >MISSÃO:</h2>
+        <h2 className={`text-2xl font-bold text-[#3A881B] pt-10 `}>MISSÃO:</h2>
         <h3>
-          <p className={`text-xl font-semibold pt-6 ${isVisible2&&'slide-in-text-reverse'}`}>Temos como missão oferecer aos nossos clientes o mais alto padrão de qualidade em biomassa de pellets, para o mercado interno e externo. A Green Energy tem como objetivo principal a sustentabilidade. Buscando harmonizar o desenvolvimento econômico e a conservação ambiental.</p>
+          <p className={`text-xl font-semibold pt-6 `}>Temos como missão oferecer aos nossos clientes o mais alto padrão de qualidade em biomassa de pellets, para o mercado interno e externo. A Green Energy tem como objetivo principal a sustentabilidade. Buscando harmonizar o desenvolvimento econômico e a conservação ambiental.</p>
         </h3>
 
-        <h2 className={`text-2xl font-bold text-[#4abe1c] pt-10 ${isVisible3&&'slide-in-text'}`}  ref={div3Ref} >VALORES:</h2>
+        <h2 className={`text-2xl font-bold text-[#3A881B] pt-10 `}>VALORES:</h2>
         <h3>
-          <p className={`text-xl font-semibold pt-6 ${isVisible3&&'slide-in-text-reverse'}`}>Nossa empresa preza pelo desenvolvimento de produtos provenientes de matérias primas que não prejudiquem o meio ambiente. Portamos em nossa bandeira valores inegociáveis, como a preservação da natureza, o respeito aos seres humanos e aos animais.</p>
+          <p className={`text-xl font-semibold pt-6 `}>Nossa empresa preza pelo desenvolvimento de produtos provenientes de matérias primas que não prejudiquem o meio ambiente. Portamos em nossa bandeira valores inegociáveis, como a preservação da natureza, o respeito aos seres humanos e aos animais.</p>
         </h3>
       </div>
     
