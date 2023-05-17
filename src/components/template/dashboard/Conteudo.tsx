@@ -4,7 +4,7 @@ interface ConteudoProps {
 
 export default function Conteudo(props: ConteudoProps) {
     return (
-        <div className={`mb-10`}>
+        <div className={``}>
             {props.children}
         </div>
     )

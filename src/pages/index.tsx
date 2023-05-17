@@ -73,37 +73,50 @@ setStatusBaner(statusBaner-1)
 
       <div className="flex justify-end">
         <div className=" rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
-          <div className="text-2xl font-semibold text-[#3A881B]"><h2>O que são pellets:</h2></div>
-          <div className="pt-4 text-lg"><h2>Os pellets são formados por resíduos de madeira prensados em formato cilíndrico, que possuem entre 6 e 8 milímetros <a className="underline cursor-pointer" onClick={()=>router.push("/produtos")}>Saiba mais...</a></h2></div>
+          <div className="text-2xl text-[#3A881B]"><h2>O que são pellets:</h2></div>
+          <div className="pt-4 text-lg"><h2>Os pellets são formados por resíduos de madeira prensados em formato cilíndrico, que possuem entre 6 e 8 milímetros <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-01")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_02.png" className="w-full md:w-96"/></div>
         </div>
       </div>
 
       <div className="flex justify-start">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
-          <div className="text-2xl font-semibold text-[#3A881B]"><h2>Como podem ser utilizados:</h2></div>
-          <div className="pt-4 text-lg"><h2>Os pellets são utilizados como geradores de calor, energia e solução higiênica para animais. Podendo ser utilizados <a className="underline cursor-pointer" onClick={()=>router.push("/produtos")}>Saiba mais...</a></h2></div>
+          <div className="text-2xl text-[#3A881B]"><h2>Como podem ser utilizados:</h2></div>
+          <div className="pt-4 text-lg"><h2>Os pellets são utilizados como geradores de calor, energia e solução higiênica para animais. Podendo ser utilizados <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-02")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_03.png" className="w-full md:w-96"/></div>
         </div>
       </div>
 
       <div className="flex justify-end">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md"> 
-          <div className="text-2xl font-semibold text-[#3A881B]"><h2>Pellets com certificado ENplus A1:</h2></div>
-          <div className="pt-4 text-lg"><h2>Ao comprar pellets, o comprador deve estar atento a certificação que garante a procedência do produto tanto pela <a className="underline cursor-pointer" onClick={()=>router.push("/produtos")}>Saiba mais...</a></h2></div>
+          <div className="text-2xl text-[#3A881B]"><h2>Pellets com certificado ENplus A1:</h2></div>
+          <div className="pt-4 text-lg"><h2>Ao comprar pellets, o comprador deve estar atento a certificação que garante a procedência do produto tanto pela <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-03")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_01.png" className="w-full md:w-96"/></div>
         </div>
       </div>
 
       <div className="flex justify-start">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
-          <div className="text-2xl font-semibold text-[#3A881B]"><h2>Vantagens econômicas e ecológicas:</h2></div>
-          <div className="pt-4 text-lg"><h2>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria-prima <a className="underline cursor-pointer" onClick={()=>router.push("/produtos")}>Saiba mais...</a></h2></div>
+          <div className="text-2xl text-[#3A881B]"><h2>Pellets x Vantagens econômicas e ecológicas</h2></div>
+          <div className="pt-4 text-lg"><h2>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria-prima <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-04")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_04.png" className="w-full md:w-96"/></div>
         </div>
       </div>
 
       </div>
+
+      <div className="px-10 py-10">
+        <div> 
+          <div className="text-2xl font-semibold">Green Energy</div>
+          <div className="font-semibold pt-4">QUEM SOMOS:</div>
+          <div className="pt-4"><h4>Somos uma empresa Brasileira, voltada para a produção de energia renovável. Nos produzimos o que a de melhor em biomassa de pellets, utilizando matéria prima proveniente da serragem de madeira sem prejudicar o meio ambiente, garantindo o padrão e a qualidade de nossos produtos</h4></div> 
+          <div className="pt-4"><h4>Acompanhando as tendências do mercado e desenvolvendo produtos sustentáveis a Green Energy investe no aperfeiçoamento das suas tecnologias de produção, com o objetivo de encontrar a união perfeita entre esses recursos. Todos os nossos produtos são adequados à norma ENPlus A1.</h4></div>       
+          <div className="font-semibold pt-4">MISSÃO:</div>
+          <div className="pt-4"><h4>Temos como missão oferecer aos nossos clientes o mais alto padrão de qualidade em biomassa de pellets, para o mercado interno e externo. A Green Energy tem como objetivo principal a sustentabilidade. Buscando harmonizar o desenvolvimento econômico e a conservação ambiental.</h4></div> 
+          <div className="font-semibold pt-4">VALORES:</div>
+          <div className="pt-4"><h4>Nossa empresa preza pelo desenvolvimento de produtos provenientes de matérias primas que não prejudiquem o meio ambiente. Portamos em nossa bandeira valores inegociáveis, como a preservação da natureza, o respeito aos seres humanos e aos animais.</h4></div> 
+        </div>
+      </div> 
 
       {/* Noticias Recentes */}
       <div className="bg-[#3A881B] px-10 py-16 text-white font-extralight">
@@ -136,9 +149,9 @@ setStatusBaner(statusBaner-1)
         </div>
 
         {/* <button className="border shadow-lg mt-8 px-4 py-1">Veja mais</button> */}
-      </div>
+      </div> 
 
-      <div className="mt-10">
+       <div className="py-10">
         <div>
           <div className="text-center font-semibold text-2xl"><a className="custom-font-caveat">CONHEÇA </a> nossa linha para pets</div>
           <div className="flex gap-6 justify-center pt-8">
@@ -146,10 +159,10 @@ setStatusBaner(statusBaner-1)
           </div>
           <div className="flex justify-center"><button className="border border-[#3A881B] shadow-lg mt-8 px-6 py-1">Linha Pets</button></div>
         </div>
-      </div>
+      </div>     
 
       {/* Mapa com informações */}
-      <div className="bg-[#3A881B] px-10 mt-10 py-10 text-white font-extralight md:grid md:grid-cols-3">
+      <div className="bg-[#3A881B] px-10 pt-10 py-10 text-white font-extralight md:grid md:grid-cols-3 border-b">
       <div className="md:flex md:items-center">
         <div>    
           <div className="text-2xl"><h2>Notícias Green Energy</h2></div>  
@@ -171,20 +184,7 @@ setStatusBaner(statusBaner-1)
           <button className="px-4 border border-white py-1 shadow-lg">Fale Conosco</button>
         </div>  
       </div>
-      </div>
-
-      <div className="px-10 py-10">
-        <div> 
-          <div className="text-2xl font-semibold">Green Energy</div>
-          <div className="font-semibold pt-4">QUEM SOMOS:</div>
-          <div className="pt-4"><h4>Somos uma empresa Brasileira, voltada para a produção de energia renovável. Nos produzimos o que a de melhor em biomassa de pellets, utilizando matéria prima proveniente da serragem de madeira sem prejudicar o meio ambiente, garantindo o padrão e a qualidade de nossos produtos</h4></div> 
-          <div className="pt-4 text-lg"><h4>Acompanhando as tendências do mercado e desenvolvendo produtos sustentáveis a Green Energy investe no aperfeiçoamento das suas tecnologias de produção, com o objetivo de encontrar a união perfeita entre esses recursos. Todos os nossos produtos são adequados à norma ENPlus A1.</h4></div>       
-          <div className="font-semibold pt-4">MISSÃO:</div>
-          <div className="pt-4"><h4>Temos como missão oferecer aos nossos clientes o mais alto padrão de qualidade em biomassa de pellets, para o mercado interno e externo. A Green Energy tem como objetivo principal a sustentabilidade. Buscando harmonizar o desenvolvimento econômico e a conservação ambiental.</h4></div> 
-          <div className="font-semibold pt-4">VALORES:</div>
-          <div className="pt-4"><h4>Nossa empresa preza pelo desenvolvimento de produtos provenientes de matérias primas que não prejudiquem o meio ambiente. Portamos em nossa bandeira valores inegociáveis, como a preservação da natureza, o respeito aos seres humanos e aos animais.</h4></div> 
-        </div>
-      </div>     
+      </div>            
        
     </Layout>
     </div>
