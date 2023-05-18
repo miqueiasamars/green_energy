@@ -44,7 +44,7 @@ useEffect(()=>{
       <div className="text-xl md:text-2xl font-semibold text-[#727272]">
           
         {tela<900?
-        <div className="">
+        <div className="pt-10">
         <div>
         <img     
           src={'/greenenergy_sobre_04.png'}
@@ -64,7 +64,7 @@ useEffect(()=>{
           </div>
         </div>
         }
-         <div className="px-10 md:px-20 pb-10">
+         <div className="px-10 md:px-20 pb-10 pt-10">
             <h2 className="text-3xl text-[#3A881B]">Como podem ser utilizados </h2>
             <br/>
             <p className='text-justify text-[#34220D]'>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria-prima para a produção de pellets é proveniente de resíduos que seriam descartamos na natureza, este fator contribui significativamente para a redução do risco de incêndios. O uso de resíduos florestais e também dos desperdícios provenientes da indústria da madeira, permite a obtenção do produto final com um menor custo. Para produzir o pellet, além dos descartes das indústrias madeireiras, diversos tipos de biomassa vegetal são utilizados, como por exemplo cascas e podas de árvores, serragem, maravalhas, palhas de cereais, bagaço da cana-de-açúcar e o bambu.   

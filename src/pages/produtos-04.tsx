@@ -43,7 +43,7 @@ useEffect(()=>{
 
       <div className="text-xl md:text-2xl font-semibold text-[#727272]">
       
-        {tela<4?
+        {tela<900?
         <div className="">
         <img     
           src={'/greenenergy_sobre_03.png'}
