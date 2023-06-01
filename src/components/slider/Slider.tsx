@@ -119,7 +119,7 @@ useEffect(()=>{
     <div className="py-16 md:py-7 px-6 flex justify-center">
       <div>
         {status==='1'?<div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética.</div>:
-        <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">The product's low moisture content makes its high calorific value highly energy efficient.</div>}         
+        <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">The product&lsquo;s low moisture content makes its high calorific value highly energy efficient.</div>}         
       </div>
     </div>
 

@@ -83,12 +83,12 @@ useEffect(()=>{
 
         <h2 className={`text-2xl font-bold text-[#3A881B] pt-10 `}>MISSION:</h2>
         <h3>
-          <p className={`text-xl font-semibold pt-6 `}>Our mission is to offer our customers the highest quality standard in pellet biomass for the domestic and foreign markets. Green Energy's main objective is sustainability. Seeking to harmonize economic development and environmental conservation.</p>
+          <p className={`text-xl font-semibold pt-6 `}>Our mission is to offer our customers the highest quality standard in pellet biomass for the domestic and foreign markets. Green Energy&lsquo;s main objective is sustainability. Seeking to harmonize economic development and environmental conservation.</p>
         </h3>
 
         <h2 className={`text-2xl font-bold text-[#3A881B] pt-10 `}>VALUES:</h2>
         <h3>
-          <p className={`text-xl font-semibold pt-6 `}>Our company values ​​the development of products from raw materials that do not harm the environment. We carry in our flag non-negotiable values, such as the preservation of nature, respect for human beings and animals.</p>
+          <p className={`text-xl font-semibold pt-6 `}>Our company values  ​the development of products from raw materials that do not harm the environment. We carry in our flag non-negotiable values, such as the preservation of nature, respect for human beings and animals.</p>
         </h3>
       </div>
 

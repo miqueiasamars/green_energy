@@ -155,7 +155,7 @@ setStatusBaner(statusBaner-1)
           <div className="pt-4"><h4>We are a Brazilian company, focused on the production of renewable energy. We produce the best in pellet biomass, using raw material from sawdust without harming the environment, guaranteeing the standard and quality of our products.</h4></div> 
           <div className="pt-4"><h4>Following market trends and developing sustainable products, Green Energy invests in the improvement of its production technologies, with the aim of finding the perfect union between these resources. All our products comply with the ENPlus A1 standard.</h4></div>       
           <div className="font-semibold pt-4">MISSION:</div>
-          <div className="pt-4"><h4>Our mission is to offer our customers the highest quality standard in pellet biomass for the domestic and foreign markets. Green Energy's main objective is sustainability. Seeking to harmonize economic development and environmental conservation.</h4></div> 
+          <div className="pt-4"><h4>Our mission is to offer our customers the highest quality standard in pellet biomass for the domestic and foreign markets. Green Energy main objective is sustainability. Seeking to harmonize economic development and environmental conservation.</h4></div> 
           <div className="font-semibold pt-4">VALUES:</div>
           <div className="pt-4"><h4>Our company values the development of products from raw materials that do not harm the environment. We carry in our flag non-negotiable values, such as the preservation of nature, respect for human beings and animals.</h4></div> 
         </div>}
