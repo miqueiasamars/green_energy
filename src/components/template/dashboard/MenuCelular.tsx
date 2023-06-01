@@ -9,6 +9,8 @@ function MenuCelular () {
 
 const {state, dispatch} = useContext(Context)
 
+const statusLingua = state.dados.status
+
 const statusmenu = state.dados.menu
 
 const [tela, setTela] = useState<number>(0)
@@ -85,29 +87,48 @@ const menu6 = () =>{
        });
 }
 
-const brasil = () =>{
+const setStatus1 = () =>{
+    dispatch({
+        type: 'STATUS',
+        payload: {
+        status: '1',
+        } 
+        });
+  }
+  const setStatus2 = () =>{
+     dispatch({
+         type: 'STATUS',
+         payload: {
+         status: '2',
+         } 
+         });
+   }
+  
+  const brasil = () =>{
     return(
         <div>
         <img                
           src={"/greenenergy_brasil.png"}         
           alt="Produtos-copps"
           className={`cursor-pointer w-6`}
+          onClick={setStatus1}
         />
         </div>
     )
-}
-
-const usa = () =>{
+  }
+  
+  const usa = () =>{
     return(
         <div>
         <img                
           src={"/greenenergy_usa.png"}         
           alt="Produtos-copps"
           className={`cursor-pointer w-6`}
+          onClick={setStatus2}
         />
         </div>
     )
-}
+  }
 
 return (
 <> 
@@ -117,7 +138,8 @@ return (
                    
           {!status&&
           <div>
-          <div className='h-8 bg-[#e5e4e4]/50 flex justify-end px-8 items-center gap-3'>Você está no {brasil()} ou {usa()}</div>
+          {statusLingua==='1'?<div className='h-8 bg-[#e5e4e4]/50 flex justify-end px-8 items-center gap-3'>Você está no {brasil()} ou {usa()}</div>:
+          <div className='h-8 bg-[#e5e4e4]/50 flex justify-end px-8 items-center gap-3'>Are you in {brasil()} or {usa()}</div>}
           <div className='flex justify-between pt-2 px-5'>
           <div className='font-bold text-xl text-[#5A4B3C]'></div>
           <div className=''>
@@ -157,15 +179,21 @@ return (
             {
         <div>
             <div onClick={menu1} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#3A881B]':'text-[#3A881B]'} hover:text-[#9d9d9d]`}>
+            {statusLingua==='1'?<div className={``}>
+                <p>Início</p>
+            </div>:
             <div className={``}>
                 <p>Home</p>
-            </div>
+            </div>}
             </div>
 
             <div onClick={menu2} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#3A881B]':'text-[#3A881B]'} hover:text-[#9d9d9d]`}>
-            <div className={``}>
+            {statusLingua==='1'?<div className={``}>
                 <p>Sobre</p>
-            </div>
+            </div>:
+            <div className={``}>
+                <p>About</p>
+            </div>}
             </div>
 
             {/* <div onClick={menu3} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#3A881B]':'text-[#3A881B]'} hover:text-[#9d9d9d]`}>
@@ -175,9 +203,13 @@ return (
             </div> */}
 
             <div onClick={menu5} className={`px-5 py-3 cursor-pointer ${statusmenu  === '1'?'text-[#3A881B]':'text-[#3A881B]'} hover:text-[#9d9d9d]`}>
+            {statusLingua==='1'?
             <div className={``}>
                 <p>Contato</p>
-            </div>
+            </div>:
+            <div className={``}>
+                <p>Contact</p>
+            </div>}
             </div>
         </div>
             } 

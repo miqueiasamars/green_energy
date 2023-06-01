@@ -4,11 +4,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { Context } from '../../data/contexts/Context';
 
 export default function MySlider() {
 
+const {state, dispatch} = useContext(Context)
+
+const status = state.dados.status
+
 const [tela, setTela] = useState(0);
+
 
 try{
     window.addEventListener('resize', function () {
@@ -30,7 +36,7 @@ useEffect(()=>{
   <Swiper
   modules={[Navigation, Pagination, Autoplay]}
   pagination={{ clickable: true }}
-  autoplay={{ delay: 6000, disableOnInteraction: false }}
+  autoplay={{ delay: 7000, disableOnInteraction: false }}
   className="mySwiper">
   
   <SwiperSlide>
@@ -55,7 +61,8 @@ useEffect(()=>{
   {/* testes e pontinhos */}
   <div className="py-16 md:py-7 px-6 flex justify-center">
     <div className=''>
-      <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">Custos reduzidos no armazenamento e no transporte, devido a alta densidade do produto.</div>         
+      {status==='1'?<div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">Custos reduzidos no armazenamento e no transporte, devido à alta densidade do produto.</div>:
+      <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">Reduced storage and transport costs due to high product density.</div>}        
     </div>
   </div>
 
@@ -82,7 +89,8 @@ useEffect(()=>{
   {/* testes e pontinhos */}
   <div className="py-20 md:py-7 px-6 flex justify-center">
     <div>
-      <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">E um combustível ecologicamente correto, limpo e muito eficiente.</div>         
+      {status==='1'?<div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">É um combustível ecologicamente correto, limpo e muito eficiente.</div>:
+      <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">It is an ecologically correct, clean and very efficient fuel.</div>}         
     </div>
   </div>
 
@@ -110,7 +118,8 @@ useEffect(()=>{
     {/* testes e pontinhos */}
     <div className="py-16 md:py-7 px-6 flex justify-center">
       <div>
-        <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética.</div>         
+        {status==='1'?<div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">O baixo teor de umidade do produto faz com que seu alto poder calorífico tenha grande eficiência energética.</div>:
+        <div className="text-3xl text-center text-[#30261D] custom-font-libre-bodoni">The product's low moisture content makes its high calorific value highly energy efficient.</div>}         
       </div>
     </div>
 
@@ -138,7 +147,8 @@ useEffect(()=>{
         {/* testes e pontinhos */}
         <div className="py-14 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Sua fabricação é proveniente de uma única matéria prima, dispensando o uso de produtos químicos.</div>         
+            {status==='1'?<div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Sua fabricação é proveniente de uma única matéria prima, dispensando o uso de produtos químicos.</div>:
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Its manufacture comes from a single raw material, dispensing with the use of chemical products.</div>}         
           </div>
         </div>
 
@@ -165,7 +175,8 @@ useEffect(()=>{
         {/* testes e pontinhos */}
         <div className="py-7 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Por não prejudicar o meio ambiente, tem o uso liberado pelo IBAMA (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis).</div>         
+            {status==='1'?<div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Por não prejudicar o meio ambiente, tem o uso liberado pelo IBAMA (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis).</div>: 
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">As it does not harm the environment, it is approved for use by IBAMA (Brazilian Institute for the Environment and Renewable Natural Resources).</div>}        
           </div>
         </div>
 
@@ -192,7 +203,8 @@ useEffect(()=>{
         {/* testes e pontinhos */}
         <div className="py-16 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Redução na emissão de fumaça, liberando menos dióxido de carbono do que os combustíveis fósseis.</div>         
+            {status==='1'?<div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">Redução na emissão de fumaça, liberando menos dióxido de carbono do que os combustíveis fósseis.</div>:    
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni"> Reduced smoke emissions, releasing less carbon dioxide than fossil fuels.</div>}     
           </div>
         </div>
 
@@ -219,7 +231,8 @@ useEffect(()=>{
         {/* testes e pontinhos */}
         <div className="py-16 md:py-7 px-6 flex justify-center">
           <div>
-            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">E uma energia renovável proveniente de matéria prima que seria descartada na natureza.</div>         
+            {status==='1'?<div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">É uma energia renovável proveniente de matéria prima que seria descartada na natureza.</div>:  
+            <div className="text-3xl pt-2 text-center text-[#30261D] custom-font-libre-bodoni">It is a renewable energy sourced from raw materials that would otherwise be discarded in nature.</div>}      
           </div>
         </div>
 

@@ -11,6 +11,8 @@ const Produtos: NextPage = () => {
 
 const {state, dispatch} = useContext(Context)
 
+const status = state.dados.status
+
 const [tela, setTela] = useState(0);
 
 try{
@@ -59,17 +61,25 @@ useEffect(()=>{
         <img     
           src={'/greenenergy_produto_03.png'}
           alt={'teste'}
-          className="w-full"     
-          /> 
-          </div>
+          className="w-full"  
+        />
+        </div>
         </div>
         }
+         {status==='1'?
          <div className="px-10 md:px-20 pb-10 pt-10">
-            <h2 className="text-3xl text-[#3A881B]">Como podem ser utilizados </h2>
+            <h2 className="text-2xl text-[#3A881B]">Pellets com certificado ENplus A1:</h2>
             <br/>
-            <p className='text-justify text-[#34220D]'>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria-prima para a produção de pellets é proveniente de resíduos que seriam descartamos na natureza, este fator contribui significativamente para a redução do risco de incêndios. O uso de resíduos florestais e também dos desperdícios provenientes da indústria da madeira, permite a obtenção do produto final com um menor custo. Para produzir o pellet, além dos descartes das indústrias madeireiras, diversos tipos de biomassa vegetal são utilizados, como por exemplo cascas e podas de árvores, serragem, maravalhas, palhas de cereais, bagaço da cana-de-açúcar e o bambu.   
-            <br/> A principal fonte de matéria-prima vem da atividade florestal, o que é muito importante ecologicamente e ajuda na economia também, já que valoriza os subprodutos de baixo valor que até há pouco tempo eram desprezados, mas que produzem um biocombustível de excelente qualidade por ter baixo teor de cinza. Após serem recolhidos, esses materiais são triturados e depois secos, para posteriormente serem transformados em pó e comprimidos para se obter a forma final. O resultado é um composto 100% natural e de elevado poder calorífico.</p>
+            <p className='text-justify text-[#34220D]'>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria prima para a produção de pellets é proveniente de resíduos que são descartados na natureza, este fator contribui significativamente para a redução do risco de incêndios. O uso de resíduos florestais e dos desperdícios provenientes da indústria da madeira, permite a obtenção do produto final com um menor custo. Para produzir o pellet, além dos descartes das indústrias madeireiras, diversos tipos de biomassa vegetal são utilizados, como por exemplo cascas e podas de árvores, serragem, maravalhas, palhas de cereais, bagaço da cana-de-açúcar e o bambu.
+            A principal fonte de matéria-prima vem da atividade florestal, o que é muito importante ecologicamente e ajuda na economia também, já que valoriza os subprodutos de baixo valor que até a pouco tempo eram desprezados, mas que produzem um biocombustível de excelente qualidade por ter baixo teor de cinza. Após serem recolhidos, esses materiais são triturados e depois secos, para posteriormente serem transformados em pó e comprimidos para se obter a forma final. O resultado é um composto 100% natural e de elevado poder calorífico.</p>
          </div>       
+         :
+         <div className="px-10 md:px-20 pb-10 pt-10">
+            <h2 className="text-2xl text-[#3A881B]">Pellets with ENplus A1 certificate:</h2>
+            <br/>
+            <p className='text-justify text-[#34220D]'>The first advantage involves the raw material, which is highly available and versatile. The raw material for the production of pellets comes from waste that is discarded in nature, this factor contributes significantly to reducing the risk of fires. The use of forest residues and waste from the wood industry allows the final product to be obtained at a lower cost. To produce the pellet, in addition to discards from the wood industries, various types of plant biomass are used, such as tree bark and pruning, sawdust, shavings, cereal straw, sugarcane bagasse and bamboo.
+            The main source of raw material comes from forestry, which is very important ecologically and also helps the economy, as it values low-value by-products that until recently were neglected, but which produce an excellent quality biofuel for having low ash content. After being collected, these materials are crushed and then dried, to later be transformed into powder and compressed to obtain the final form. The result is a 100% natural compound with a high calorific value.</p>
+         </div>}
 
         <div>
         </div>

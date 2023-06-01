@@ -10,6 +10,8 @@ const Contato: NextPage = () => {
 
 const {state, dispatch} = useContext(Context)
 
+const status = state.dados.status
+
 const [tela, setTela] = useState(0);
 
 try{
@@ -56,16 +58,22 @@ useEffect(()=>{
         </div>
       </div>
       
-      <div className="pt-10 px-6 md:px-16 lg:px-40">
+      {status==='1'?<div className="pt-10 px-6 md:px-16 lg:px-40">
       <div className="font-bold md:text-2xl text-[#3A881B]">PREENCHA NOSSO FORMULÁRIO</div>
       <div className="text-md">Em breve nossa equipe entrará em contato</div>
       </div>
+      :
+      <div className="pt-10 px-6 md:px-16 lg:px-40">
+      <div className="font-bold md:text-2xl text-[#3A881B]">FILL OUT OUR FORM</div>
+      <div className="text-md">Our team will contact you shortly.</div>
+      </div>}
 
       <div className="px-6 md:px-16 lg:px-40">
       <form>
         {/*Nome Cliente */}      
         <label>
-          <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-10">Nome Completo</p>
+          {status==='1'?<p className="flex px-4 items-center gap-2 text-[#3A881B] pt-10">Nome Completo</p>:
+          <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-10">Full name</p>}
           <div className="flex shadow-sm">    
           <input
           // value={state.dados?.nome}
@@ -98,7 +106,8 @@ useEffect(()=>{
 
             {/*Nome Cliente */}
             <label>
-              <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Telefone</p>
+              {status==='1'?<p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Telefone</p>:
+              <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Telephone</p>}
               <div className="flex shadow-sm">    
               <input
               // value={state.dados?.nome}
@@ -115,7 +124,8 @@ useEffect(()=>{
 
         {/*Nome Cliente */}      
         <label>
-          <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Títuloo</p>
+          {status==='1'?<p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Título</p>:
+          <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Title</p>}
           <div className="flex shadow-sm">    
           <input
           // value={state.dados?.nome}
@@ -131,7 +141,8 @@ useEffect(()=>{
 
         {/*Nome Cliente */}      
         <label>
-          <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Mensagem</p>
+          {status==='1'?<p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Mensagem</p>:
+          <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Message</p>}
           <div className="flex shadow-sm">    
           <textarea
           // value={state.dados?.nome}
@@ -144,7 +155,8 @@ useEffect(()=>{
           </div> 
         </label>
 
-        <div className="flex justify-center sm:justify-end pt-2"><button className={`shadow-sm text-[#3A881B] border border-[#3A881B] hover:border-[#67ff2b] rounded-md px-10 py-1 text-2xl font-semibold mt-6`}>ENVIAR FORMULÁRIO</button></div>
+        {status==="1"?<div className="flex justify-center sm:justify-end pt-2 pb-10"><button className={`shadow-sm text-[#3A881B] border border-[#3A881B] hover:border-[#67ff2b] rounded-md px-10 py-1 text-2xl font-semibold mt-6`}>ENVIAR FORMULÁRIO</button></div>:
+        <div className="flex justify-center sm:justify-end pt-2 pb-10"><button className={`shadow-sm text-[#3A881B] border border-[#3A881B] hover:border-[#67ff2b] rounded-md px-10 py-1 text-2xl font-semibold mt-6`}>SEND FORM</button></div>}
       </form>
       </div>
     

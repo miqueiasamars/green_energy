@@ -1,8 +1,15 @@
 import Image from 'next/image';
 import router from 'next/router';
 import { IconEmail, IconMaps, IconRelogio, IconWhatsApp, Icontelephone } from '../../icons';
+import { useContext } from 'react';
+import { Context } from '../../../data/contexts/Context';
 
 export function Rodape (){
+
+  const {state, dispatch} = useContext(Context)
+  
+  const status = state.dados.status
+
 
     return(
 
@@ -13,7 +20,8 @@ export function Rodape (){
 
       <div className='px-2 text-sm flex justify-center'>
         <div>
-        <div className='text-white font-semibold px-4'>Contatos</div>
+        {status==='1'?<div className='text-white font-semibold px-4'>Contatos</div>:
+        <div className='text-white font-semibold px-4'>contacts</div>}
         {/* <div className='text-white mt-1 flex gap-4 items-center px-4'>{Icontelephone} ( 41 ) 9 9769-7540</div> */}
         <div className='text-white mt-1 flex gap-4 items-center px-4'>{IconWhatsApp} ( 41 ) 9 9769-7540</div>
         <div className='text-white mt-1 flex gap-4 items-center px-4'>{IconEmail} jordane.silva@greenenergypellets.com.br</div>
@@ -25,7 +33,8 @@ export function Rodape (){
       <div className='pt-10 md:flex text-white md:justify-center'>
   
       <div className=''>
-      <h6>Inscreva-se em nossa newsletter</h6>
+      {status==='1'?<h6>Inscreva-se em nossa newsletter</h6>:
+      <h6>Subscribe to our newsletter</h6>}
          {/*Nome*/}      
          <label>          
           <div className="flex shadow-sm mt-2 ">    
@@ -55,12 +64,14 @@ export function Rodape (){
             />        
             </div> 
           </label>
-          <div className='pt-2 flex justify-end'><button className='border border-[#fff] text-white px-4'>Enviar</button></div>
+          {status==='1'?<div className='pt-2 flex justify-end'><button className='border border-[#fff] text-white px-4'>Enviar</button></div>:
+          <div className='pt-2 flex justify-end'><button className='border border-[#fff] text-white px-4'>To send</button></div>}
       </div>
       </div>
 
       <div className='mt-10'>
-        <div className='flex justify-center text-white font-extralight text-xl'><h6>Siga-nos em nossas redes sociais:</h6></div>
+        {status==='1'?<div className='flex justify-center text-white font-extralight text-xl'><h6>Siga-nos em nossas redes sociais:</h6></div>:
+        <div className='flex justify-center text-white font-extralight text-xl'><h6>Follow us on our social networks:</h6></div>}
         <div className='flex justify-center gap-4 mt-4'>          
           <div>
             <img                
@@ -90,7 +101,8 @@ export function Rodape (){
       </div>
       
     <div className='text-xs md:text-center bg-[#276211] px-4 py-2'>
-      <p className='text-white '>GREEN ENERGY LTDA © Todos os direitos reservados</p>
+      {status==='1'?<p className='text-white '>GREEN ENERGY LTDA © Todos os direitos reservados</p>:
+      <p className='text-white '>GREEN ENERGY LTDA © All rights reserved</p>}
       <p className='text-white '>CNPJ: 30.451.857/0001-99</p> 
     </div>
     </>
