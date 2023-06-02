@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import Layout from "../components/template/dashboard/Layout";
 import { Context } from "../data/contexts/Context";
 import { IconEmail, Icontelephone } from "../components/icons";
+import axios from "axios";
 
 
 const Contato: NextPage = () => {
@@ -13,6 +14,12 @@ const {state, dispatch} = useContext(Context)
 const status = state.dados.status
 
 const [tela, setTela] = useState(0);
+
+const [ nome, setNome] = useState('')
+const [ email, setEmail] = useState('')
+const [ telefone, setTelefone] = useState('')
+const [ titulo, setTitulo] = useState('')
+const [ descricao, setDescricao] = useState('')
 
 try{
   window.addEventListener('resize', function () {
@@ -37,6 +44,18 @@ useEffect(()=>{
         }
     });
 },[dispatch])
+
+const handleSubmit = async () => {
+   
+  try {
+    const res = await axios.post("/api/email", {nome, email, telefone, titulo, descricao});
+    console.log(res.data);
+    // fazer algo com a resposta, ex: exibir mensagem de sucesso
+  } catch (err) {
+    console.error(err);
+    // fazer algo com o erro, ex: exibir mensagem de erro
+  }
+}
 
   return (
     <div className={`bg-[#ffffff] text-[#494949]`}>
@@ -76,8 +95,8 @@ useEffect(()=>{
           <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-10">Full name</p>}
           <div className="flex shadow-sm">    
           <input
-          // value={state.dados?.nome}
-          // onChange={nomeEvento}
+          value={nome}
+          onChange={(e)=>setNome(e.target.value)}
           type="text"
           name="name"
           id="name"
@@ -93,8 +112,8 @@ useEffect(()=>{
               <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">E-mail</p>
               <div className="flex shadow-sm">    
               <input
-              // value={state.dados?.nome}
-              // onChange={nomeEvento}
+              value={email}
+              onChange={(e)=>setEmail(e.target.value)}
               type="text"
               name="name"
               id="name"
@@ -110,8 +129,8 @@ useEffect(()=>{
               <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Telephone</p>}
               <div className="flex shadow-sm">    
               <input
-              // value={state.dados?.nome}
-              // onChange={nomeEvento}
+              value={telefone}
+              onChange={(e)=>setTelefone(e.target.value)}
               type="text"
               name="name"
               id="name"
@@ -128,8 +147,8 @@ useEffect(()=>{
           <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Title</p>}
           <div className="flex shadow-sm">    
           <input
-          // value={state.dados?.nome}
-          // onChange={nomeEvento}
+          value={titulo}
+          onChange={(e)=>setTitulo(e.target.value)}
           type="text"
           name="name"
           id="name"
@@ -145,8 +164,8 @@ useEffect(()=>{
           <p className="flex px-4 items-center gap-2 text-[#3A881B] pt-2">Message</p>}
           <div className="flex shadow-sm">    
           <textarea
-          // value={state.dados?.nome}
-          // onChange={nomeEvento}
+          value={descricao}
+          onChange={(e)=>setDescricao(e.target.value)}
           name="name"
           id="name"
           className={`bg-[#fff] flex-1 h-36 rounded-md appearance-none px-3 py-2 border border-[#3A881B] placeholder-[#969595] text-gray-900 focus:outline-none focus:border-1 focus:border-[#67ff2b] focus:z-10`}
@@ -155,8 +174,8 @@ useEffect(()=>{
           </div> 
         </label>
 
-        {status==="1"?<div className="flex justify-center sm:justify-end pt-2 pb-10"><button className={`shadow-sm text-[#3A881B] border border-[#3A881B] hover:border-[#67ff2b] rounded-md px-10 py-1 text-2xl font-semibold mt-6`}>ENVIAR FORMULÁRIO</button></div>:
-        <div className="flex justify-center sm:justify-end pt-2 pb-10"><button className={`shadow-sm text-[#3A881B] border border-[#3A881B] hover:border-[#67ff2b] rounded-md px-10 py-1 text-2xl font-semibold mt-6`}>SEND FORM</button></div>}
+        {status==="1"?<div className="flex justify-center sm:justify-end pt-2 pb-10"><button onClick={handleSubmit} className={`shadow-sm text-[#3A881B] border border-[#3A881B] hover:border-[#67ff2b] rounded-md px-10 py-1 text-2xl font-semibold mt-6`}>ENVIAR FORMULÁRIO</button></div>:
+        <div className="flex justify-center sm:justify-end pt-2 pb-10"><button onClick={handleSubmit}  className={`shadow-sm text-[#3A881B] border border-[#3A881B] hover:border-[#67ff2b] rounded-md px-10 py-1 text-2xl font-semibold mt-6`}>SEND FORM</button></div>}
       </form>
       </div>
     

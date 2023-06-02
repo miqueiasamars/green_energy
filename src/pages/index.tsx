@@ -70,7 +70,7 @@ setStatusBaner(statusBaner-1)
       {/* baner falndo sobre */}
 
       <div className="md:px-5 md:gap-5 px-10 py-10 grid grid-col-1 md:grid-cols-2 gap-6 bg-[url('/GreenEnergy_floresta.jpg')] bg-center bg-no-repeat w-full">
-
+      {/* 1 */}
       {status==='1'?<div className="flex justify-end">
         <div className=" rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
           <div className="text-2xl text-[#3A881B]"><h2>O que são pellets:</h2></div>
@@ -82,11 +82,11 @@ setStatusBaner(statusBaner-1)
       <div className="flex justify-end">
         <div className=" rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
           <div className="text-2xl text-[#3A881B]"><h2>What are pellets:</h2></div>
-          <div className="pt-4 text-lg"><h2>The pellets are formed by wood waste pressed in a cylindrical shape, which are between 6 and 8 millimeters <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-01")}>Know more...</a></h2></div>
+          <div className="pt-4 text-lg"><h2>Pellets are formed by wood residues pressed in a cylindrical shape, which are between 6 and 8 millimeters <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-01")}>Know more...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_02.png" className="w-full md:w-96"/></div>
         </div>
       </div>}
-
+      {/* 2 */}
       {status==='1'?<div className="flex justify-start">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
           <div className="text-2xl text-[#3A881B]"><h2>Como podem ser utilizados:</h2></div>
@@ -98,15 +98,15 @@ setStatusBaner(statusBaner-1)
       <div className="flex justify-start">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
           <div className="text-2xl text-[#3A881B]"><h2>How they can be used:</h2></div>
-          <div className="pt-4 text-lg"><h2>The pellets are used as generators of heat, energy and hygienic solution for animals. Can be used< a className="underline cursor-pointer" onClick={()=>router.push("/produtos-02")}>Know more...</a></h2></div>
+          <div className="pt-4 text-lg"><h2>- The pellets are used as generators of heat, energy and hygienic solution for< a className="underline cursor-pointer" onClick={()=>router.push("/produtos-02")}>Know more...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_03.png" className="w-full md:w-96"/></div>
         </div>
       </div>}
-
+      {/* 3 */}
       {status==='1'?<div className="flex justify-end">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md"> 
           <div className="text-2xl text-[#3A881B]"><h2>Pellets com certificado ENplus A1:</h2></div>
-          <div className="pt-4 text-lg"><h2>Ao comprar pellets, o comprador deve estar atento a certificação que garante a procedência do produto tanto pela <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-03")}>Saiba mais...</a></h2></div>
+          <div className="pt-4 text-lg"><h2>Ao comprar pellets, o comprador deve estar atento a certificação que garante a procedência<a className="underline cursor-pointer" onClick={()=>router.push("/produtos-03")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_01.png" className="w-full md:w-96"/></div>
         </div>
       </div>
@@ -114,14 +114,14 @@ setStatusBaner(statusBaner-1)
       <div className="flex justify-end">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md"> 
           <div className="text-2xl text-[#3A881B]"><h2>Pellets with ENplus A1 certificate:</h2></div>
-          <div className="pt-4 text-lg"><h2>When buying pellets, the buyer must pay attention to the certification that guarantees the origin of the product both by <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-03")}>Know more...</a></h2></div>
+          <div className="pt-4 text-lg"><h2>When buying pellets, the buyer must be aware of the certification that guarantees the origin<a className="underline cursor-pointer" onClick={()=>router.push("/produtos-03")}>Know more...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_01.png" className="w-full md:w-96"/></div>
         </div>
       </div>}
-
+      {/* 4 */}
       {status==='1'?<div className="flex justify-start">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
-          <div className="text-2xl text-[#3A881B]"><h2>Pellets x Vantagens econômicas e ecológicas</h2></div>
+          <div className="text-2xl text-[#3A881B]"><h2>Vantagens econômicas e ecológicas</h2></div>
           <div className="pt-4 text-lg"><h2>A primeira vantagem envolve a matéria-prima, que apresenta uma grande disponibilidade e versatilidade. A matéria-prima <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-04")}>Saiba mais...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_04.png" className="w-full md:w-96"/></div>
         </div>
@@ -129,7 +129,7 @@ setStatusBaner(statusBaner-1)
       :
       <div className="flex justify-start">
         <div className="rounded-lg border border-[#e9e7e7] px-6 py-6 sobra bg-white md:max-w-md">
-          <div className="text-2xl text-[#3A881B]"><h2>Pellets x Economic and ecological advantages:</h2></div>
+          <div className="text-2xl text-[#3A881B]"><h2>Economic and ecological advantages:</h2></div>
           <div className="pt-4 text-lg"><h2>The first advantage involves the raw material, which is highly available and versatile. the raw material <a className="underline cursor-pointer" onClick={()=>router.push("/produtos-04")}>Know more...</a></h2></div>
           <div className="flex justify-center pt-4"><img src="/greenenergy_center_04.png" className="w-full md:w-96"/></div>
         </div>
@@ -141,7 +141,7 @@ setStatusBaner(statusBaner-1)
         {status==='1'?<div> 
           <div className="text-2xl font-semibold">Green Energy</div>
           <div className="font-semibold pt-4">QUEM SOMOS:</div>
-          <div className="pt-4"><h4>Somos uma empresa Brasileira, voltada para a produção de energia renovável. Nos produzimos o que a de melhor em biomassa de pellets, utilizando matéria prima proveniente da serragem de madeira sem prejudicar o meio ambiente, garantindo o padrão e a qualidade de nossos produtos</h4></div> 
+          <div className="pt-4"><h4>Somos uma empresa Brasileira, voltada para a produção de energia renovável. Nos produzimos o que a de melhor em biomassa de pellets, utilizando matéria prima proveniente da serragem de madeira sem prejudicar o meio ambiente, garantindo o padrão e a qualidade de nossos produtos.</h4></div> 
           <div className="pt-4"><h4>Acompanhando as tendências do mercado e desenvolvendo produtos sustentáveis a Green Energy investe no aperfeiçoamento das suas tecnologias de produção, com o objetivo de encontrar a união perfeita entre esses recursos. Todos os nossos produtos são adequados à norma ENPlus A1.</h4></div>       
           <div className="font-semibold pt-4">MISSÃO:</div>
           <div className="pt-4"><h4>Temos como missão oferecer aos nossos clientes o mais alto padrão de qualidade em biomassa de pellets, para o mercado interno e externo. A Green Energy tem como objetivo principal a sustentabilidade. Buscando harmonizar o desenvolvimento econômico e a conservação ambiental.</h4></div> 

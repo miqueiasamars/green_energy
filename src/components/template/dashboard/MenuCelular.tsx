@@ -169,12 +169,12 @@ return (
         <img
          width={200}
          height={200}
-         src={'/logomarca.png'}
+         src={'/logo.png'}
          alt="Logo Marca"
-         className={``}/>
+         className={`w-32`}/>
         </div>
 
-        <div className='pt-10 text-xl font-semibold px-4'> 
+        <div className='pt-10 text-xl font-semibold flex justify-center'> 
             {/*  Produtos de produtores  */}
             {
         <div>

@@ -18,8 +18,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: 'comercial@llconstrutora.com.br',
-    pass: 'llconstrutora@1825',
+    user: 'raquel.sanagiotto@greenenergypellets.com.br',
+    pass: 'greenenergy@2422',
   },
   tls: { rejectUnauthorized: false },
 });
@@ -33,7 +33,7 @@ export default async function handler(
 
     const messageHTML = `
       <header style="background-color: #796A37; color: #ffffff;">
-        <div style="padding: 2% 10%; border-radius: 10px; font-size: 20px;">Olá, LL CONSTRUTORA</div>
+        <div style="padding: 2% 10%; border-radius: 10px; font-size: 20px;">Olá, Green Energy</div>
       </header>
       <article>
         <div style="padding: 5% 10%;">
@@ -57,8 +57,8 @@ export default async function handler(
       <hr style="background-color: #796A37;">`;
 
     await transporter.sendMail({
-      from: 'SITE | LL CONSTRUTORA <comercial@llconstrutora.com.br>',
-      to: 'll.construtoraltda@hotmail.com',
+      from: 'SITE | GREEN ENERGY <raquel.sanagiotto@greenenergypellets.com.br>',
+      to: 'miqueiasmars@gmil.com',
       subject: 'Formulário Site',
       text: '',
       html: messageHTML,

@@ -138,7 +138,7 @@ return (
     <div className='flex'>
     {status==='1'?
     <div className='h-12 bg-[#e5e4e4]/50 w-screen flex justify-end px-20 items-center gap-3'>Você está no {brasil()} ou {usa()}</div>:
-    <div className='h-8 bg-[#e5e4e4]/50 flex justify-end px-8 items-center gap-3'>Are you in {brasil()} or {usa()}</div>}
+    <div className='h-12 bg-[#e5e4e4]/50 w-screen flex justify-end px-20 items-center gap-3'>Are you in {brasil()} or {usa()}</div>}
     </div>
 
     <nav className="fixed  w-full flex items-center justify-between px-5 py-3 backdrop-blur-sm bg-[#ffffff]/50">

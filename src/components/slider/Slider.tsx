@@ -44,18 +44,31 @@ useEffect(()=>{
   <div className="mt-20 md:mt-0 shadow-md">
     {tela>=768?         
     <div className=''>
-      <img
+      {status==='1'?<img
         src={"/greenenergy_pellets_carrosel_01_md.png"}
         alt="Descrição da imgm"
         className={`cursor-pointer w-full`}
-      />
+      />:
+      <img
+        src={"/greenenergy_pellets_carrosel_01_md_ingles.png"}
+        alt="Descrição da imgm"
+        className={`cursor-pointer w-full`}
+      />}
     </div>
     :
-    <img                
+    <div>
+   { status==='1'?<img                
       src={"/greenenergy_pellets_carrosel_01.png"}
       alt="Produtos-copps"
       className={`cursor-pointer w-full`}
+    />:
+    <img                
+      src={"/greenenergy_pellets_carrosel_01_ingles.png"}
+      alt="Produtos-copps"
+      className={`cursor-pointer w-full`}
     />}
+    </div>
+    }
   </div>
 
   {/* testes e pontinhos */}
