@@ -141,7 +141,7 @@ setStatusBaner(statusBaner-1)
         {status==='1'?<div> 
           <div className="text-2xl font-semibold">Green Energy</div>
           <div className="font-semibold pt-4">QUEM SOMOS:</div>
-          <div className="pt-4"><h4>Somos uma empresa Brasileira, voltada para a produção de energia renovável. Nos produzimos o que a de melhor em biomassa de pellets, utilizando matéria prima proveniente da serragem de madeira sem prejudicar o meio ambiente, garantindo o padrão e a qualidade de nossos produtos.</h4></div> 
+          <div className="pt-4"><h4>Somos uma empresa Brasileira, voltada para a produção de energia renovável. Nós produzimos o que a de melhor em biomassa de pellets, utilizando matéria prima proveniente da serragem de madeira sem prejudicar o meio ambiente, garantindo o padrão e a qualidade de nossos produtos.</h4></div> 
           <div className="pt-4"><h4>Acompanhando as tendências do mercado e desenvolvendo produtos sustentáveis a Green Energy investe no aperfeiçoamento das suas tecnologias de produção, com o objetivo de encontrar a união perfeita entre esses recursos. Todos os nossos produtos são adequados à norma ENPlus A1.</h4></div>       
           <div className="font-semibold pt-4">MISSÃO:</div>
           <div className="pt-4"><h4>Temos como missão oferecer aos nossos clientes o mais alto padrão de qualidade em biomassa de pellets, para o mercado interno e externo. A Green Energy tem como objetivo principal a sustentabilidade. Buscando harmonizar o desenvolvimento econômico e a conservação ambiental.</h4></div> 
@@ -200,7 +200,7 @@ setStatusBaner(statusBaner-1)
           {status==='1'?<div className="text-center font-semibold text-2xl"><a className="custom-font-caveat">CONHEÇA </a> nossa linha para pets</div>:
           <div className="text-center font-semibold text-2xl"><a className="custom-font-caveat">KNOW </a>our line for pets</div>}
           <div className="flex gap-6 justify-center pt-8">
-          <div className="border border-[#3A881B] rounded-full px-4 py-4 bg-white shadow-lg"> <img src="/greenenergy_pets.png" className="w-36"/></div>
+          <div className="border border-[#3A881B] rounded-full bg-white shadow-lg"> <img src="/greenenergy_pets.png" className="w-36"/></div>
           </div>
           {status==='1'?<div className="flex justify-center"><button className="border border-[#3A881B] shadow-lg mt-8 px-6 py-1">Linha Pets</button></div>:
           <div className="flex justify-center"><button className="border border-[#3A881B] shadow-lg mt-8 px-6 py-1">line Pets</button></div>}

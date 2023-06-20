@@ -32,7 +32,7 @@ useEffect(()=>{
 },[])
 
   return (
-  <div className=''>
+  <div className='md:-mt-14'>
   <Swiper
   modules={[Navigation, Pagination, Autoplay]}
   pagination={{ clickable: true }}

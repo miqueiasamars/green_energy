@@ -133,15 +133,10 @@ const usa = () =>{
 return (
 <> 
 {tela >= 768&&
-<div className='minha-div'> 
+<div className='minha-div'>    
     
-    <div className='flex'>
-    {status==='1'?
-    <div className='h-12 bg-[#e5e4e4]/50 w-screen flex justify-end px-20 items-center gap-3'>Você está no {brasil()} ou {usa()}</div>:
-    <div className='h-12 bg-[#e5e4e4]/50 w-screen flex justify-end px-20 items-center gap-3'>Are you in {brasil()} or {usa()}</div>}
-    </div>
 
-    <nav className="fixed  w-full flex items-center justify-between px-5 py-3 backdrop-blur-sm bg-[#ffffff]/50">
+    <nav className="fixed  w-full flex items-center justify-between px-5 py-1 backdrop-blur-sm bg-[#ffffff]/50">
 
       <div className="flex items-center flex-shrink-0 px-24">
         <img src="/logo.png" alt="Logo" className="h-16"/>
@@ -178,6 +173,12 @@ return (
             <button onClick={menu5} className="text-lg transition font-semibold ease-in-out delay-150 hover:scale-125 duration-75 text-[#3A881B] bg-white rounded-md px-6 py-1 border border-[#3A881B]">
               Contact
             </button>}
+
+            <div className='flex'>
+            {status==='1'?
+            <div className='flex gap-4 text-lg items-center font-semibold'>Você está no {brasil()} ou {usa()}</div>:
+            <div className='flex gap-4 text-lg items-center font-semibold'>Are you in {brasil()} or {usa()}</div>}
+            </div>
 
         </div>
 
